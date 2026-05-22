@@ -1,0 +1,50 @@
+# Local report source with machine-specific image paths.
+report.typ
+**/report.typ
+
+# Vivado generated state and run products.
+*.jou
+*.log
+*.str
+*.wdb
+*.wcfg
+*.pb
+*.dcp
+*.rpt
+*.vds
+*.wdf
+*.lpr
+*.xpr.user
+*.runs/
+*.cache/
+*.hw/
+*.ip_user_files/
+*.sim/
+*.srcs/utils_*/
+.Xil/
+.jobs/
+xsim.dir/
+xsim.ini
+webtalk*.jou
+webtalk*.log
+
+# Simulation and synthesis scratch files.
+*.sdb
+*.rlx
+*.dbg
+*.mem
+*.reloc
+*.rtti
+*.svtype
+*.type
+*.version
+*.win64.obj
+xsimk.exe
+xsimcrash.log
+xsimkernel.log
+
+# OS/editor noise.
+Thumbs.db
+Desktop.ini
+*.swp
+*.tmp
