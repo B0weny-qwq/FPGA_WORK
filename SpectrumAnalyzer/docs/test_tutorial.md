@@ -1,90 +1,89 @@
 # 中文测试教程
 
-## 1. 创建 Vivado 工程
+## 1. 创建完整 Vivado 工程
 
-打开 Vivado，进入 Tcl Console，将当前目录切到 `SpectrumAnalyzer` 工程根目录，然后执行：
+在 PowerShell 中执行：
 
-```tcl
-source scripts/create_project.tcl
+```powershell
+cd C:/Users/S/Desktop/FPGA/SpectrumAnalyzer
+D:/FPGA/2025.2/Vivado/bin/vivado.bat -mode batch -source scripts/setup_full_project.tcl
 ```
 
-脚本会自动创建工程、导入 `rtl/` 下的设计文件和 `sim/tb/` 下的 testbench 文件，并把默认仿真顶层设置为 `tb_spec_analyzer_top`。
+脚本会创建 `vivado_project/`，导入 `rtl/`、`sim/tb/` 和 `ip/` 下的计划 IP，并把设计顶层设置为 `spec_analyzer_top`，默认仿真顶层设置为 `tb_spec_analyzer_top`。
 
-## 2. 运行顶层仿真
-
-默认运行顶层端到端仿真：
+在 Vivado Tcl Shell 中也可以执行：
 
 ```tcl
-source scripts/run_sim.tcl
+cd C:/Users/S/Desktop/FPGA/SpectrumAnalyzer
+source scripts/setup_full_project.tcl
 ```
 
-仿真中重点观察：
+## 2. 批量运行 4 个 testbench
 
-- `debug_peak_valid` 是否周期性拉高；
-- `debug_peak_bin` 是否随 DDS 频率设置变化；
-- `debug_peak_mag` 是否为非零；
-- `debug_fifo_full` 和 `debug_fifo_empty` 是否不会同时为高；
-- VGA 输出 `vga_hs`、`vga_vs`、`vga_r/g/b` 是否持续变化。
+```powershell
+D:/FPGA/2025.2/Vivado/bin/vivado.bat -mode batch -source scripts/run_all_sims.tcl
+```
 
-## 3. 切换独立 testbench
+脚本会依次运行：
 
-如果只想验证 FIFO：
+- `tb_async_fifo`
+- `tb_fft_chain`
+- `tb_vga_render`
+- `tb_spec_analyzer_top`
+
+通过后会写出 `reports/sim_summary.md`。Vivado 控制台若显示中文乱码，只看退出码和报告即可。
+
+## 3. 单独运行某个 testbench
+
+如果已经在 Vivado Tcl Shell 中：
 
 ```tcl
+source scripts/setup_full_project.tcl
 set sim_top tb_async_fifo
 source scripts/run_sim.tcl
 ```
 
-如果只想验证 FFT 分析链：
-
-```tcl
-set sim_top tb_fft_chain
-source scripts/run_sim.tcl
-```
-
-如果只想验证 VGA 渲染：
-
-```tcl
-set sim_top tb_vga_render
-source scripts/run_sim.tcl
-```
+可把 `sim_top` 改成 `tb_fft_chain`、`tb_vga_render` 或 `tb_spec_analyzer_top`。
 
 ## 4. 各测试通过标准
 
 ### FIFO 测试
 
-控制台应看到类似“通过：异步 FIFO 数据顺序和空满检查正确”的中文提示。若数据顺序错误、读空后 `empty` 不为高，testbench 会调用 `$fatal` 停止仿真。
+`tb_async_fifo` 写入 12 个连续数据，检查读出顺序、`rd_valid` 时序和最终 `empty` 状态。通过时控制台打印 FIFO 顺序和空满检查正确。
 
 ### FFT 链测试
 
-`tb_fft_chain` 使用 `freq_word = 32'h0800_0000`，对应 256 点 FFT 的第 8 个频点。通过标准是峰值频点接近 8，或者由于实信号频谱对称而接近 248。
+`tb_fft_chain` 使用 `freq_word = 32'h0800_0000` 产生单音正弦。256 点 FFT 的主峰应接近第 8 个频点，或接近镜像频点 248。当前行为级 DFT 仿真检测到 `peak_bin=8`。
 
 ### VGA 测试
 
-`tb_vga_render` 会统计一帧有效像素数量。通过标准是有效像素数等于 `640 * 480`，并且渲染器产生了频谱柱或网格像素。
+`tb_vga_render` 统计一帧有效像素数量，要求等于 `640 * 480`，并且频谱渲染器产生柱状图或网格像素。
 
 ### 顶层测试
 
-`tb_spec_analyzer_top` 会等待至少两个峰值有效脉冲。通过标准是峰值幅度非零，FIFO 状态不矛盾，系统链路没有死锁。
+`tb_spec_analyzer_top` 等待至少两次 `debug_peak_valid`，检查 `debug_peak_mag` 非 0，且 FIFO 不会同时 `full` 和 `empty`。当前顶层仿真两次峰值均落在频点 8。
 
-## 5. 生成 FFT IP
+## 5. 综合检查
 
-当前工程已经能使用行为级 FFT 模型进行课程仿真。如果老师要求展示 Vivado FFT IP 生成流程，可以执行：
-
-```tcl
-source scripts/gen_ip_fft.tcl
+```powershell
+D:/FPGA/2025.2/Vivado/bin/vivado.bat -mode batch -source scripts/run_synth_check.tcl
 ```
 
-生成 IP 后，建议仍保留 `xfft_wrapper` 作为唯一修改点。这样报告中可以说明：系统其他模块不依赖具体 IP 版本，FFT IP 参数变化时只需要维护一个封装文件。
+脚本会运行 `synth_1`，导出：
 
-## 6. 报告截图建议
+- `reports/synth_utilization.rpt`
+- `reports/timing_summary.rpt`
+- `reports/hierarchy.rpt`
+- `reports/compile_order.rpt`
+- `reports/spec_analyzer_top_synth.dcp`
+- `reports/synth_summary.md`
 
-推荐截图顺序：
+综合时不定义 `XFFT_BEHAVIORAL_DFT_SIM`，因此 `xfft_wrapper` 接入真实 `xfft_256` IP。Vivado `open_run synth_1` 时会读取 `ip/xfft_256_1/xfft_256.dcp`。
 
-1. DDS 输出波形和 `sample_valid`；
-2. FIFO 写入、读出和空满标志；
-3. FFT 输入 `tvalid/tready/tlast`；
-4. FFT 输出频点、幅度和峰值检测；
-5. VGA 有效显示区、像素坐标和 RGB 输出。
+## 6. 电路图查看
 
-这样截图顺序正好对应系统数据流，答辩时讲起来比较顺。
+```powershell
+D:/FPGA/2025.2/Vivado/bin/vivado.bat -mode batch -source scripts/export_schematic.tcl
+```
+
+该脚本会写出 `reports/schematic_guide.md`。答辩时建议在 Vivado GUI 中打开工程，查看 elaborated 或 synthesized design，并按 README 中的数据流展开模块层级。

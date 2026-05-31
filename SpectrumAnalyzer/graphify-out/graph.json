@@ -1,0 +1,2731 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "async_sample_fifo_ip_sv.sv",
+      "file_type": "code",
+      "source_file": "ip/async_sample_fifo_ip/async_sample_fifo_ip_sv.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_async_sample_fifo_ip_async_sample_fifo_ip_sv_sv",
+      "community": 52,
+      "norm_label": "async_sample_fifo_ip_sv.sv"
+    },
+    {
+      "label": "fifo_generator_v13_2_rfs.v",
+      "file_type": "code",
+      "source_file": "ip/async_sample_fifo_ip/hdl/fifo_generator_v13_2_rfs.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_async_sample_fifo_ip_hdl_fifo_generator_v13_2_rfs_v",
+      "community": 53,
+      "norm_label": "fifo_generator_v13_2_rfs.v"
+    },
+    {
+      "label": "async_sample_fifo_ip.v",
+      "file_type": "code",
+      "source_file": "ip/async_sample_fifo_ip/sim/async_sample_fifo_ip.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_async_sample_fifo_ip_sim_async_sample_fifo_ip_v",
+      "community": 54,
+      "norm_label": "async_sample_fifo_ip.v"
+    },
+    {
+      "label": "fifo_generator_vlog_beh.v",
+      "file_type": "code",
+      "source_file": "ip/async_sample_fifo_ip/simulation/fifo_generator_vlog_beh.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_async_sample_fifo_ip_simulation_fifo_generator_vlog_beh_v",
+      "community": 55,
+      "norm_label": "fifo_generator_vlog_beh.v"
+    },
+    {
+      "label": "hann_rom_256_sv.sv",
+      "file_type": "code",
+      "source_file": "ip/hann_rom_256/hann_rom_256_sv.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_hann_rom_256_hann_rom_256_sv_sv",
+      "community": 56,
+      "norm_label": "hann_rom_256_sv.sv"
+    },
+    {
+      "label": "hann_rom_256.v",
+      "file_type": "code",
+      "source_file": "ip/hann_rom_256/sim/hann_rom_256.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_hann_rom_256_sim_hann_rom_256_v",
+      "community": 57,
+      "norm_label": "hann_rom_256.v"
+    },
+    {
+      "label": "blk_mem_gen_v8_4.v",
+      "file_type": "code",
+      "source_file": "ip/hann_rom_256/simulation/blk_mem_gen_v8_4.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_hann_rom_256_simulation_blk_mem_gen_v8_4_v",
+      "community": 58,
+      "norm_label": "blk_mem_gen_v8_4.v"
+    },
+    {
+      "label": "sine_rom_256_sv.sv",
+      "file_type": "code",
+      "source_file": "ip/sine_rom_256/sine_rom_256_sv.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_sine_rom_256_sine_rom_256_sv_sv",
+      "community": 61,
+      "norm_label": "sine_rom_256_sv.sv"
+    },
+    {
+      "label": "sine_rom_256.v",
+      "file_type": "code",
+      "source_file": "ip/sine_rom_256/sim/sine_rom_256.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_sine_rom_256_sim_sine_rom_256_v",
+      "community": 59,
+      "norm_label": "sine_rom_256.v"
+    },
+    {
+      "label": "blk_mem_gen_v8_4.v",
+      "file_type": "code",
+      "source_file": "ip/sine_rom_256/simulation/blk_mem_gen_v8_4.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_sine_rom_256_simulation_blk_mem_gen_v8_4_v",
+      "community": 60,
+      "norm_label": "blk_mem_gen_v8_4.v"
+    },
+    {
+      "label": "spec_bin_bram_sv.sv",
+      "file_type": "code",
+      "source_file": "ip/spec_bin_bram/spec_bin_bram_sv.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_spec_bin_bram_spec_bin_bram_sv_sv",
+      "community": 64,
+      "norm_label": "spec_bin_bram_sv.sv"
+    },
+    {
+      "label": "spec_bin_bram.v",
+      "file_type": "code",
+      "source_file": "ip/spec_bin_bram/sim/spec_bin_bram.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_spec_bin_bram_sim_spec_bin_bram_v",
+      "community": 62,
+      "norm_label": "spec_bin_bram.v"
+    },
+    {
+      "label": "blk_mem_gen_v8_4.v",
+      "file_type": "code",
+      "source_file": "ip/spec_bin_bram/simulation/blk_mem_gen_v8_4.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_spec_bin_bram_simulation_blk_mem_gen_v8_4_v",
+      "community": 63,
+      "norm_label": "blk_mem_gen_v8_4.v"
+    },
+    {
+      "label": "xfft_256_sim_netlist.v",
+      "file_type": "code",
+      "source_file": "ip/xfft_256_1/xfft_256_sim_netlist.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_xfft_256_1_xfft_256_sim_netlist_v",
+      "community": 65,
+      "norm_label": "xfft_256_sim_netlist.v"
+    },
+    {
+      "label": "xfft_256_stub.v",
+      "file_type": "code",
+      "source_file": "ip/xfft_256_1/xfft_256_stub.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_xfft_256_1_xfft_256_stub_v",
+      "community": 66,
+      "norm_label": "xfft_256_stub.v"
+    },
+    {
+      "label": "xfft_256_sv.sv",
+      "file_type": "code",
+      "source_file": "ip/xfft_256_1/xfft_256_sv.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "ip_xfft_256_1_xfft_256_sv_sv",
+      "community": 8,
+      "norm_label": "xfft_256_sv.sv"
+    },
+    {
+      "label": "clk_rst_gen.v",
+      "file_type": "code",
+      "source_file": "rtl/common/clk_rst_gen.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_common_clk_rst_gen_v",
+      "community": 9,
+      "norm_label": "clk_rst_gen.v"
+    },
+    {
+      "label": "pulse_sync.v",
+      "file_type": "code",
+      "source_file": "rtl/common/pulse_sync.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_common_pulse_sync_v",
+      "community": 10,
+      "norm_label": "pulse_sync.v"
+    },
+    {
+      "label": "sync_reset.v",
+      "file_type": "code",
+      "source_file": "rtl/common/sync_reset.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_common_sync_reset_v",
+      "community": 11,
+      "norm_label": "sync_reset.v"
+    },
+    {
+      "label": "ctrl_model.v",
+      "file_type": "code",
+      "source_file": "rtl/ctrl/ctrl_model.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_ctrl_ctrl_model_v",
+      "community": 12,
+      "norm_label": "ctrl_model.v"
+    },
+    {
+      "label": "dds_signal_gen.v",
+      "file_type": "code",
+      "source_file": "rtl/dds/dds_signal_gen.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_dds_dds_signal_gen_v",
+      "community": 13,
+      "norm_label": "dds_signal_gen.v"
+    },
+    {
+      "label": "phase_acc.v",
+      "file_type": "code",
+      "source_file": "rtl/dds/phase_acc.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_dds_phase_acc_v",
+      "community": 14,
+      "norm_label": "phase_acc.v"
+    },
+    {
+      "label": "wave_gen_sawtooth.v",
+      "file_type": "code",
+      "source_file": "rtl/dds/wave_gen_sawtooth.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_dds_wave_gen_sawtooth_v",
+      "community": 15,
+      "norm_label": "wave_gen_sawtooth.v"
+    },
+    {
+      "label": "wave_gen_square.v",
+      "file_type": "code",
+      "source_file": "rtl/dds/wave_gen_square.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_dds_wave_gen_square_v",
+      "community": 16,
+      "norm_label": "wave_gen_square.v"
+    },
+    {
+      "label": "wave_gen_triangle.v",
+      "file_type": "code",
+      "source_file": "rtl/dds/wave_gen_triangle.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_dds_wave_gen_triangle_v",
+      "community": 17,
+      "norm_label": "wave_gen_triangle.v"
+    },
+    {
+      "label": "wave_rom_sin.v",
+      "file_type": "code",
+      "source_file": "rtl/dds/wave_rom_sin.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_dds_wave_rom_sin_v",
+      "community": 18,
+      "norm_label": "wave_rom_sin.v"
+    },
+    {
+      "label": "fft_cfg_rom.v",
+      "file_type": "code",
+      "source_file": "rtl/fft/fft_cfg_rom.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fft_fft_cfg_rom_v",
+      "community": 19,
+      "norm_label": "fft_cfg_rom.v"
+    },
+    {
+      "label": "fft_frame_ctrl.v",
+      "file_type": "code",
+      "source_file": "rtl/fft/fft_frame_ctrl.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fft_fft_frame_ctrl_v",
+      "community": 20,
+      "norm_label": "fft_frame_ctrl.v"
+    },
+    {
+      "label": "xfft_wrapper.v",
+      "file_type": "code",
+      "source_file": "rtl/fft/xfft_wrapper.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fft_xfft_wrapper_v",
+      "community": 21,
+      "norm_label": "xfft_wrapper.v"
+    },
+    {
+      "label": "async_fifo.v",
+      "file_type": "code",
+      "source_file": "rtl/fifo/async_fifo.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fifo_async_fifo_v",
+      "community": 22,
+      "norm_label": "async_fifo.v"
+    },
+    {
+      "label": "async_fifo_bridge.v",
+      "file_type": "code",
+      "source_file": "rtl/fifo/async_fifo_bridge.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fifo_async_fifo_bridge_v",
+      "community": 67,
+      "norm_label": "async_fifo_bridge.v"
+    },
+    {
+      "label": "fifo_mem.v",
+      "file_type": "code",
+      "source_file": "rtl/fifo/fifo_mem.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fifo_fifo_mem_v",
+      "community": 23,
+      "norm_label": "fifo_mem.v"
+    },
+    {
+      "label": "fifo_rd_ctrl.v",
+      "file_type": "code",
+      "source_file": "rtl/fifo/fifo_rd_ctrl.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fifo_fifo_rd_ctrl_v",
+      "community": 24,
+      "norm_label": "fifo_rd_ctrl.v"
+    },
+    {
+      "label": "fifo_wr_ctrl.v",
+      "file_type": "code",
+      "source_file": "rtl/fifo/fifo_wr_ctrl.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fifo_fifo_wr_ctrl_v",
+      "community": 25,
+      "norm_label": "fifo_wr_ctrl.v"
+    },
+    {
+      "label": "gray_conv.v",
+      "file_type": "code",
+      "source_file": "rtl/fifo/gray_conv.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fifo_gray_conv_v",
+      "community": 26,
+      "norm_label": "gray_conv.v"
+    },
+    {
+      "label": "gray_sync.v",
+      "file_type": "code",
+      "source_file": "rtl/fifo/gray_sync.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_fifo_gray_sync_v",
+      "community": 27,
+      "norm_label": "gray_sync.v"
+    },
+    {
+      "label": "bin_to_height.v",
+      "file_type": "code",
+      "source_file": "rtl/postproc/bin_to_height.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_postproc_bin_to_height_v",
+      "community": 28,
+      "norm_label": "bin_to_height.v"
+    },
+    {
+      "label": "fft_mag_calc.v",
+      "file_type": "code",
+      "source_file": "rtl/postproc/fft_mag_calc.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_postproc_fft_mag_calc_v",
+      "community": 29,
+      "norm_label": "fft_mag_calc.v"
+    },
+    {
+      "label": "mag_compress.v",
+      "file_type": "code",
+      "source_file": "rtl/postproc/mag_compress.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_postproc_mag_compress_v",
+      "community": 30,
+      "norm_label": "mag_compress.v"
+    },
+    {
+      "label": "peak_detector.v",
+      "file_type": "code",
+      "source_file": "rtl/postproc/peak_detector.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_postproc_peak_detector_v",
+      "community": 31,
+      "norm_label": "peak_detector.v"
+    },
+    {
+      "label": "spec_bin_buffer.v",
+      "file_type": "code",
+      "source_file": "rtl/postproc/spec_bin_buffer.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_postproc_spec_bin_buffer_v",
+      "community": 32,
+      "norm_label": "spec_bin_buffer.v"
+    },
+    {
+      "label": "frame_dump_model.v",
+      "file_type": "code",
+      "source_file": "rtl/sim_model/frame_dump_model.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_sim_model_frame_dump_model_v",
+      "community": 33,
+      "norm_label": "frame_dump_model.v"
+    },
+    {
+      "label": "spec_analyzer_top.v",
+      "file_type": "code",
+      "source_file": "rtl/top/spec_analyzer_top.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_top_spec_analyzer_top_v",
+      "community": 34,
+      "norm_label": "spec_analyzer_top.v"
+    },
+    {
+      "label": "font_rom_8x16.v",
+      "file_type": "code",
+      "source_file": "rtl/vga/font_rom_8x16.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_vga_font_rom_8x16_v",
+      "community": 35,
+      "norm_label": "font_rom_8x16.v"
+    },
+    {
+      "label": "osd_text_gen.v",
+      "file_type": "code",
+      "source_file": "rtl/vga/osd_text_gen.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_vga_osd_text_gen_v",
+      "community": 36,
+      "norm_label": "osd_text_gen.v"
+    },
+    {
+      "label": "overlay_mux.v",
+      "file_type": "code",
+      "source_file": "rtl/vga/overlay_mux.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_vga_overlay_mux_v",
+      "community": 37,
+      "norm_label": "overlay_mux.v"
+    },
+    {
+      "label": "spectrum_renderer.v",
+      "file_type": "code",
+      "source_file": "rtl/vga/spectrum_renderer.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_vga_spectrum_renderer_v",
+      "community": 38,
+      "norm_label": "spectrum_renderer.v"
+    },
+    {
+      "label": "vga_timing_gen.v",
+      "file_type": "code",
+      "source_file": "rtl/vga/vga_timing_gen.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_vga_vga_timing_gen_v",
+      "community": 39,
+      "norm_label": "vga_timing_gen.v"
+    },
+    {
+      "label": "hann_rom.v",
+      "file_type": "code",
+      "source_file": "rtl/window/hann_rom.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_window_hann_rom_v",
+      "community": 40,
+      "norm_label": "hann_rom.v"
+    },
+    {
+      "label": "win_mul_optional.v",
+      "file_type": "code",
+      "source_file": "rtl/window/win_mul_optional.v",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "rtl_window_win_mul_optional_v",
+      "community": 41,
+      "norm_label": "win_mul_optional.v"
+    },
+    {
+      "label": "tb_async_fifo.sv",
+      "file_type": "code",
+      "source_file": "sim/tb/tb_async_fifo.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "sim_tb_tb_async_fifo_sv",
+      "community": 42,
+      "norm_label": "tb_async_fifo.sv"
+    },
+    {
+      "label": "tb_fft_chain.sv",
+      "file_type": "code",
+      "source_file": "sim/tb/tb_fft_chain.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "sim_tb_tb_fft_chain_sv",
+      "community": 43,
+      "norm_label": "tb_fft_chain.sv"
+    },
+    {
+      "label": "tb_spec_analyzer_top.sv",
+      "file_type": "code",
+      "source_file": "sim/tb/tb_spec_analyzer_top.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "sim_tb_tb_spec_analyzer_top_sv",
+      "community": 44,
+      "norm_label": "tb_spec_analyzer_top.sv"
+    },
+    {
+      "label": "tb_vga_render.sv",
+      "file_type": "code",
+      "source_file": "sim/tb/tb_vga_render.sv",
+      "source_location": "L1",
+      "confidence_score": 1.0,
+      "id": "sim_tb_tb_vga_render_sv",
+      "community": 45,
+      "norm_label": "tb_vga_render.sv"
+    },
+    {
+      "label": "README.md",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "readme_md",
+      "community": 46,
+      "norm_label": "readme.md"
+    },
+    {
+      "label": "FPGA \u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "id": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "community": 46,
+      "norm_label": "fpga \u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1"
+    },
+    {
+      "label": "1. \u9879\u76ee\u7b80\u4ecb",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L3",
+      "id": "spectrumanalyzer_readme_1_\u9879\u76ee\u7b80\u4ecb",
+      "community": 46,
+      "norm_label": "1. \u9879\u76ee\u7b80\u4ecb"
+    },
+    {
+      "label": "2. \u5f53\u524d\u9a8c\u6536\u72b6\u6001",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "id": "spectrumanalyzer_readme_2_\u5f53\u524d\u9a8c\u6536\u72b6\u6001",
+      "community": 46,
+      "norm_label": "2. \u5f53\u524d\u9a8c\u6536\u72b6\u6001"
+    },
+    {
+      "label": "3. \u4e00\u952e\u6d41\u7a0b",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "id": "spectrumanalyzer_readme_3_\u4e00\u952e\u6d41\u7a0b",
+      "community": 46,
+      "norm_label": "3. \u4e00\u952e\u6d41\u7a0b"
+    },
+    {
+      "label": "4. \u811a\u672c\u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "id": "spectrumanalyzer_readme_4_\u811a\u672c\u8bf4\u660e",
+      "community": 46,
+      "norm_label": "4. \u811a\u672c\u8bf4\u660e"
+    },
+    {
+      "label": "5. IP \u72b6\u6001",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L67",
+      "id": "spectrumanalyzer_readme_5_ip_\u72b6\u6001",
+      "community": 46,
+      "norm_label": "5. ip \u72b6\u6001"
+    },
+    {
+      "label": "6. \u5de5\u7a0b\u76ee\u5f55",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L79",
+      "id": "spectrumanalyzer_readme_6_\u5de5\u7a0b\u76ee\u5f55",
+      "community": 46,
+      "norm_label": "6. \u5de5\u7a0b\u76ee\u5f55"
+    },
+    {
+      "label": "7. \u6587\u6863\u5165\u53e3",
+      "file_type": "document",
+      "source_file": "README.md",
+      "source_location": "L104",
+      "id": "spectrumanalyzer_readme_7_\u6587\u6863\u5165\u53e3",
+      "community": 46,
+      "norm_label": "7. \u6587\u6863\u5165\u53e3"
+    },
+    {
+      "label": "architecture.md",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L1",
+      "id": "docs_architecture_md",
+      "community": 2,
+      "norm_label": "architecture.md"
+    },
+    {
+      "label": "\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L1",
+      "id": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "community": 2,
+      "norm_label": "\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e"
+    },
+    {
+      "label": "1. \u603b\u4f53\u7ed3\u6784",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L3",
+      "id": "docs_architecture_1_\u603b\u4f53\u7ed3\u6784",
+      "community": 2,
+      "norm_label": "1. \u603b\u4f53\u7ed3\u6784"
+    },
+    {
+      "label": "2. \u65f6\u949f\u57df\u5212\u5206",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L21",
+      "id": "docs_architecture_2_\u65f6\u949f\u57df\u5212\u5206",
+      "community": 2,
+      "norm_label": "2. \u65f6\u949f\u57df\u5212\u5206"
+    },
+    {
+      "label": "3. \u6570\u636e\u6d41\u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L31",
+      "id": "docs_architecture_3_\u6570\u636e\u6d41\u8bf4\u660e",
+      "community": 2,
+      "norm_label": "3. \u6570\u636e\u6d41\u8bf4\u660e"
+    },
+    {
+      "label": "4. \u624b\u5199 RTL \u4e0e IP \u5206\u5de5",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L44",
+      "id": "docs_architecture_4_\u624b\u5199_rtl_\u4e0e_ip_\u5206\u5de5",
+      "community": 2,
+      "norm_label": "4. \u624b\u5199 rtl \u4e0e ip \u5206\u5de5"
+    },
+    {
+      "label": "5. \u7535\u8def\u56fe\u8bb2\u89e3\u987a\u5e8f",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L54",
+      "id": "docs_architecture_5_\u7535\u8def\u56fe\u8bb2\u89e3\u987a\u5e8f",
+      "community": 2,
+      "norm_label": "5. \u7535\u8def\u56fe\u8bb2\u89e3\u987a\u5e8f"
+    },
+    {
+      "label": "full_score_goal.md",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L1",
+      "id": "docs_full_score_goal_md",
+      "community": 6,
+      "norm_label": "full_score_goal.md"
+    },
+    {
+      "label": "SpectrumAnalyzer \u6ee1\u5206\u7ea7\u8865\u9f50 Goal",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L1",
+      "id": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "community": 6,
+      "norm_label": "spectrumanalyzer \u6ee1\u5206\u7ea7\u8865\u9f50 goal"
+    },
+    {
+      "label": "0. \u4f7f\u7528\u65b9\u5f0f",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L3",
+      "id": "docs_full_score_goal_0_\u4f7f\u7528\u65b9\u5f0f",
+      "community": 6,
+      "norm_label": "0. \u4f7f\u7528\u65b9\u5f0f"
+    },
+    {
+      "label": "1. \u603b\u76ee\u6807",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L9",
+      "id": "docs_full_score_goal_1_\u603b\u76ee\u6807",
+      "community": 6,
+      "norm_label": "1. \u603b\u76ee\u6807"
+    },
+    {
+      "label": "2. \u6700\u7ec8\u7cfb\u7edf\u94fe\u8def",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L24",
+      "id": "docs_full_score_goal_2_\u6700\u7ec8\u7cfb\u7edf\u94fe\u8def",
+      "community": 6,
+      "norm_label": "2. \u6700\u7ec8\u7cfb\u7edf\u94fe\u8def"
+    },
+    {
+      "label": "3. IP \u8865\u9f50\u8981\u6c42",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L54",
+      "id": "docs_full_score_goal_3_ip_\u8865\u9f50\u8981\u6c42",
+      "community": 6,
+      "norm_label": "3. ip \u8865\u9f50\u8981\u6c42"
+    },
+    {
+      "label": "4. Vivado \u811a\u672c\u8981\u6c42",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L81",
+      "id": "docs_full_score_goal_4_vivado_\u811a\u672c\u8981\u6c42",
+      "community": 6,
+      "norm_label": "4. vivado \u811a\u672c\u8981\u6c42"
+    },
+    {
+      "label": "5. \u7efc\u5408\u7535\u8def\u56fe\u8981\u6c42",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L110",
+      "id": "docs_full_score_goal_5_\u7efc\u5408\u7535\u8def\u56fe\u8981\u6c42",
+      "community": 6,
+      "norm_label": "5. \u7efc\u5408\u7535\u8def\u56fe\u8981\u6c42"
+    },
+    {
+      "label": "6. \u6587\u6863\u66f4\u65b0\u8981\u6c42",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L134",
+      "id": "docs_full_score_goal_6_\u6587\u6863\u66f4\u65b0\u8981\u6c42",
+      "community": 6,
+      "norm_label": "6. \u6587\u6863\u66f4\u65b0\u8981\u6c42"
+    },
+    {
+      "label": "7. LaTeX \u5b9e\u9a8c\u62a5\u544a\u8981\u6c42",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L151",
+      "id": "docs_full_score_goal_7_latex_\u5b9e\u9a8c\u62a5\u544a\u8981\u6c42",
+      "community": 6,
+      "norm_label": "7. latex \u5b9e\u9a8c\u62a5\u544a\u8981\u6c42"
+    },
+    {
+      "label": "8. Graphify \u8981\u6c42",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L180",
+      "id": "docs_full_score_goal_8_graphify_\u8981\u6c42",
+      "community": 6,
+      "norm_label": "8. graphify \u8981\u6c42"
+    },
+    {
+      "label": "9. \u9a8c\u6536\u547d\u4ee4",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L203",
+      "id": "docs_full_score_goal_9_\u9a8c\u6536\u547d\u4ee4",
+      "community": 6,
+      "norm_label": "9. \u9a8c\u6536\u547d\u4ee4"
+    },
+    {
+      "label": "10. \u8fb9\u754c\u4e0e\u6ce8\u610f\u4e8b\u9879",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L232",
+      "id": "docs_full_score_goal_10_\u8fb9\u754c\u4e0e\u6ce8\u610f\u4e8b\u9879",
+      "community": 6,
+      "norm_label": "10. \u8fb9\u754c\u4e0e\u6ce8\u610f\u4e8b\u9879"
+    },
+    {
+      "label": "11. \u5f53\u524d\u5df2\u77e5\u72b6\u6001\u63d0\u793a",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L241",
+      "id": "docs_full_score_goal_11_\u5f53\u524d\u5df2\u77e5\u72b6\u6001\u63d0\u793a",
+      "community": 6,
+      "norm_label": "11. \u5f53\u524d\u5df2\u77e5\u72b6\u6001\u63d0\u793a"
+    },
+    {
+      "label": "12. 2026-05-31 \u672c\u8f6e\u5b9e\u73b0\u72b6\u6001",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L251",
+      "id": "docs_full_score_goal_12_2026_05_31_\u672c\u8f6e\u5b9e\u73b0\u72b6\u6001",
+      "community": 6,
+      "norm_label": "12. 2026-05-31 \u672c\u8f6e\u5b9e\u73b0\u72b6\u6001"
+    },
+    {
+      "label": "interface_spec.md",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L1",
+      "id": "docs_interface_spec_md",
+      "community": 1,
+      "norm_label": "interface_spec.md"
+    },
+    {
+      "label": "\u63a5\u53e3\u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L1",
+      "id": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "community": 1,
+      "norm_label": "\u63a5\u53e3\u8bf4\u660e"
+    },
+    {
+      "label": "1. \u9876\u5c42\u6a21\u5757 `spec_analyzer_top`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L3",
+      "id": "docs_interface_spec_1_\u9876\u5c42\u6a21\u5757_spec_analyzer_top",
+      "community": 1,
+      "norm_label": "1. \u9876\u5c42\u6a21\u5757 `spec_analyzer_top`"
+    },
+    {
+      "label": "2. DDS \u4e0e Hann \u7a97\u63a5\u53e3",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L23",
+      "id": "docs_interface_spec_2_dds_\u4e0e_hann_\u7a97\u63a5\u53e3",
+      "community": 1,
+      "norm_label": "2. dds \u4e0e hann \u7a97\u63a5\u53e3"
+    },
+    {
+      "label": "3. FIFO \u63a5\u53e3",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L38",
+      "id": "docs_interface_spec_3_fifo_\u63a5\u53e3",
+      "community": 1,
+      "norm_label": "3. fifo \u63a5\u53e3"
+    },
+    {
+      "label": "4. FFT AXI-Stream \u63a5\u53e3",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L53",
+      "id": "docs_interface_spec_4_fft_axi_stream_\u63a5\u53e3",
+      "community": 1,
+      "norm_label": "4. fft axi-stream \u63a5\u53e3"
+    },
+    {
+      "label": "`fft_frame_ctrl`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L55",
+      "id": "docs_interface_spec_fft_frame_ctrl",
+      "community": 1,
+      "norm_label": "`fft_frame_ctrl`"
+    },
+    {
+      "label": "`xfft_wrapper`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L65",
+      "id": "docs_interface_spec_xfft_wrapper",
+      "community": 1,
+      "norm_label": "`xfft_wrapper`"
+    },
+    {
+      "label": "5. \u540e\u5904\u7406\u63a5\u53e3",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L84",
+      "id": "docs_interface_spec_5_\u540e\u5904\u7406\u63a5\u53e3",
+      "community": 1,
+      "norm_label": "5. \u540e\u5904\u7406\u63a5\u53e3"
+    },
+    {
+      "label": "6. VGA \u63a5\u53e3",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L93",
+      "id": "docs_interface_spec_6_vga_\u63a5\u53e3",
+      "community": 1,
+      "norm_label": "6. vga \u63a5\u53e3"
+    },
+    {
+      "label": "ip_integration.md",
+      "file_type": "document",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L1",
+      "id": "docs_ip_integration_md",
+      "community": 7,
+      "norm_label": "ip_integration.md"
+    },
+    {
+      "label": "IP \u63a5\u5165\u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L1",
+      "id": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
+      "community": 7,
+      "norm_label": "ip \u63a5\u5165\u8bf4\u660e"
+    },
+    {
+      "label": "1. \u603b\u89c8",
+      "file_type": "document",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L3",
+      "id": "docs_ip_integration_1_\u603b\u89c8",
+      "community": 7,
+      "norm_label": "1. \u603b\u89c8"
+    },
+    {
+      "label": "2. IP \u6e05\u5355",
+      "file_type": "document",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L7",
+      "id": "docs_ip_integration_2_ip_\u6e05\u5355",
+      "community": 7,
+      "norm_label": "2. ip \u6e05\u5355"
+    },
+    {
+      "label": "3. \u751f\u6210\u811a\u672c",
+      "file_type": "document",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L17",
+      "id": "docs_ip_integration_3_\u751f\u6210\u811a\u672c",
+      "community": 7,
+      "norm_label": "3. \u751f\u6210\u811a\u672c"
+    },
+    {
+      "label": "4. FFT IP \u63a5\u5165\u70b9",
+      "file_type": "document",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L29",
+      "id": "docs_ip_integration_4_fft_ip_\u63a5\u5165\u70b9",
+      "community": 7,
+      "norm_label": "4. fft ip \u63a5\u5165\u70b9"
+    },
+    {
+      "label": "5. FIFO IP \u53ef\u9009\u63a5\u5165\u70b9",
+      "file_type": "document",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L49",
+      "id": "docs_ip_integration_5_fifo_ip_\u53ef\u9009\u63a5\u5165\u70b9",
+      "community": 7,
+      "norm_label": "5. fifo ip \u53ef\u9009\u63a5\u5165\u70b9"
+    },
+    {
+      "label": "6. ROM/BRAM \u5c55\u793a IP",
+      "file_type": "document",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L65",
+      "id": "docs_ip_integration_6_rom_bram_\u5c55\u793a_ip",
+      "community": 7,
+      "norm_label": "6. rom/bram \u5c55\u793a ip"
+    },
+    {
+      "label": "synthesis_schematic.md",
+      "file_type": "document",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L1",
+      "id": "docs_synthesis_schematic_md",
+      "community": 47,
+      "norm_label": "synthesis_schematic.md"
+    },
+    {
+      "label": "\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L1",
+      "id": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
+      "community": 47,
+      "norm_label": "\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e"
+    },
+    {
+      "label": "1. \u9a8c\u6536\u76ee\u6807",
+      "file_type": "document",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L3",
+      "id": "docs_synthesis_schematic_1_\u9a8c\u6536\u76ee\u6807",
+      "community": 47,
+      "norm_label": "1. \u9a8c\u6536\u76ee\u6807"
+    },
+    {
+      "label": "2. \u751f\u6210\u7efc\u5408\u7ed3\u679c",
+      "file_type": "document",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L7",
+      "id": "docs_synthesis_schematic_2_\u751f\u6210\u7efc\u5408\u7ed3\u679c",
+      "community": 47,
+      "norm_label": "2. \u751f\u6210\u7efc\u5408\u7ed3\u679c"
+    },
+    {
+      "label": "3. Vivado GUI \u67e5\u770b\u6b65\u9aa4",
+      "file_type": "document",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L24",
+      "id": "docs_synthesis_schematic_3_vivado_gui_\u67e5\u770b\u6b65\u9aa4",
+      "community": 47,
+      "norm_label": "3. vivado gui \u67e5\u770b\u6b65\u9aa4"
+    },
+    {
+      "label": "4. \u7b54\u8fa9\u8bb2\u89e3\u53e3\u5f84",
+      "file_type": "document",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L46",
+      "id": "docs_synthesis_schematic_4_\u7b54\u8fa9\u8bb2\u89e3\u53e3\u5f84",
+      "community": 47,
+      "norm_label": "4. \u7b54\u8fa9\u8bb2\u89e3\u53e3\u5f84"
+    },
+    {
+      "label": "5. IP \u4e0e RTL \u6807\u6ce8",
+      "file_type": "document",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L58",
+      "id": "docs_synthesis_schematic_5_ip_\u4e0e_rtl_\u6807\u6ce8",
+      "community": 47,
+      "norm_label": "5. ip \u4e0e rtl \u6807\u6ce8"
+    },
+    {
+      "label": "test_tutorial.md",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L1",
+      "id": "docs_test_tutorial_md",
+      "community": 3,
+      "norm_label": "test_tutorial.md"
+    },
+    {
+      "label": "\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L1",
+      "id": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "community": 3,
+      "norm_label": "\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b"
+    },
+    {
+      "label": "1. \u521b\u5efa\u5b8c\u6574 Vivado \u5de5\u7a0b",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L3",
+      "id": "docs_test_tutorial_1_\u521b\u5efa\u5b8c\u6574_vivado_\u5de5\u7a0b",
+      "community": 3,
+      "norm_label": "1. \u521b\u5efa\u5b8c\u6574 vivado \u5de5\u7a0b"
+    },
+    {
+      "label": "2. \u6279\u91cf\u8fd0\u884c 4 \u4e2a testbench",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L21",
+      "id": "docs_test_tutorial_2_\u6279\u91cf\u8fd0\u884c_4_\u4e2a_testbench",
+      "community": 3,
+      "norm_label": "2. \u6279\u91cf\u8fd0\u884c 4 \u4e2a testbench"
+    },
+    {
+      "label": "3. \u5355\u72ec\u8fd0\u884c\u67d0\u4e2a testbench",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L36",
+      "id": "docs_test_tutorial_3_\u5355\u72ec\u8fd0\u884c\u67d0\u4e2a_testbench",
+      "community": 3,
+      "norm_label": "3. \u5355\u72ec\u8fd0\u884c\u67d0\u4e2a testbench"
+    },
+    {
+      "label": "4. \u5404\u6d4b\u8bd5\u901a\u8fc7\u6807\u51c6",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L48",
+      "id": "docs_test_tutorial_4_\u5404\u6d4b\u8bd5\u901a\u8fc7\u6807\u51c6",
+      "community": 3,
+      "norm_label": "4. \u5404\u6d4b\u8bd5\u901a\u8fc7\u6807\u51c6"
+    },
+    {
+      "label": "FIFO \u6d4b\u8bd5",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L50",
+      "id": "docs_test_tutorial_fifo_\u6d4b\u8bd5",
+      "community": 3,
+      "norm_label": "fifo \u6d4b\u8bd5"
+    },
+    {
+      "label": "FFT \u94fe\u6d4b\u8bd5",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L54",
+      "id": "docs_test_tutorial_fft_\u94fe\u6d4b\u8bd5",
+      "community": 3,
+      "norm_label": "fft \u94fe\u6d4b\u8bd5"
+    },
+    {
+      "label": "VGA \u6d4b\u8bd5",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L58",
+      "id": "docs_test_tutorial_vga_\u6d4b\u8bd5",
+      "community": 3,
+      "norm_label": "vga \u6d4b\u8bd5"
+    },
+    {
+      "label": "\u9876\u5c42\u6d4b\u8bd5",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L62",
+      "id": "docs_test_tutorial_\u9876\u5c42\u6d4b\u8bd5",
+      "community": 3,
+      "norm_label": "\u9876\u5c42\u6d4b\u8bd5"
+    },
+    {
+      "label": "5. \u7efc\u5408\u68c0\u67e5",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L66",
+      "id": "docs_test_tutorial_5_\u7efc\u5408\u68c0\u67e5",
+      "community": 3,
+      "norm_label": "5. \u7efc\u5408\u68c0\u67e5"
+    },
+    {
+      "label": "6. \u7535\u8def\u56fe\u67e5\u770b",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L83",
+      "id": "docs_test_tutorial_6_\u7535\u8def\u56fe\u67e5\u770b",
+      "community": 3,
+      "norm_label": "6. \u7535\u8def\u56fe\u67e5\u770b"
+    },
+    {
+      "label": "verification_plan.md",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L1",
+      "id": "docs_verification_plan_md",
+      "community": 0,
+      "norm_label": "verification_plan.md"
+    },
+    {
+      "label": "\u9a8c\u8bc1\u8ba1\u5212",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L1",
+      "id": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "community": 0,
+      "norm_label": "\u9a8c\u8bc1\u8ba1\u5212"
+    },
+    {
+      "label": "1. \u9a8c\u8bc1\u76ee\u6807",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L3",
+      "id": "docs_verification_plan_1_\u9a8c\u8bc1\u76ee\u6807",
+      "community": 0,
+      "norm_label": "1. \u9a8c\u8bc1\u76ee\u6807"
+    },
+    {
+      "label": "2. \u9759\u6001\u68c0\u67e5",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L15",
+      "id": "docs_verification_plan_2_\u9759\u6001\u68c0\u67e5",
+      "community": 0,
+      "norm_label": "2. \u9759\u6001\u68c0\u67e5"
+    },
+    {
+      "label": "3. Testbench",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L24",
+      "id": "docs_verification_plan_3_testbench",
+      "community": 0,
+      "norm_label": "3. testbench"
+    },
+    {
+      "label": "4. \u7efc\u5408\u68c0\u67e5",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L35",
+      "id": "docs_verification_plan_4_\u7efc\u5408\u68c0\u67e5",
+      "community": 0,
+      "norm_label": "4. \u7efc\u5408\u68c0\u67e5"
+    },
+    {
+      "label": "5. IP \u72b6\u6001\u68c0\u67e5",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L50",
+      "id": "docs_verification_plan_5_ip_\u72b6\u6001\u68c0\u67e5",
+      "community": 0,
+      "norm_label": "5. ip \u72b6\u6001\u68c0\u67e5"
+    },
+    {
+      "label": "6. \u7535\u8def\u56fe\u9a8c\u6536",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L62",
+      "id": "docs_verification_plan_6_\u7535\u8def\u56fe\u9a8c\u6536",
+      "community": 0,
+      "norm_label": "6. \u7535\u8def\u56fe\u9a8c\u6536"
+    },
+    {
+      "label": "ip_status.md",
+      "file_type": "document",
+      "source_file": "reports/ip_status.md",
+      "source_location": "L1",
+      "id": "reports_ip_status_md",
+      "community": 48,
+      "norm_label": "ip_status.md"
+    },
+    {
+      "label": "IP Status Report",
+      "file_type": "document",
+      "source_file": "reports/ip_status.md",
+      "source_location": "L1",
+      "id": "reports_ip_status_ip_status_report",
+      "community": 48,
+      "norm_label": "ip status report"
+    },
+    {
+      "label": "schematic_guide.md",
+      "file_type": "document",
+      "source_file": "reports/schematic_guide.md",
+      "source_location": "L1",
+      "id": "reports_schematic_guide_md",
+      "community": 49,
+      "norm_label": "schematic_guide.md"
+    },
+    {
+      "label": "\u7f01\u714e\u608e/\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d\u00af\u5b58\u69d1",
+      "file_type": "document",
+      "source_file": "reports/schematic_guide.md",
+      "source_location": "L1",
+      "id": "reports_schematic_guide_\u7f01\u714e\u608e_\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d_\u5b58\u69d1",
+      "community": 49,
+      "norm_label": "\u7f01\u714e\u608e/\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d \u5b58\u69d1"
+    },
+    {
+      "label": "sim_summary.md",
+      "file_type": "document",
+      "source_file": "reports/sim_summary.md",
+      "source_location": "L1",
+      "id": "reports_sim_summary_md",
+      "community": 50,
+      "norm_label": "sim_summary.md"
+    },
+    {
+      "label": "Simulation Summary",
+      "file_type": "document",
+      "source_file": "reports/sim_summary.md",
+      "source_location": "L1",
+      "id": "reports_sim_summary_simulation_summary",
+      "community": 50,
+      "norm_label": "simulation summary"
+    },
+    {
+      "label": "synth_summary.md",
+      "file_type": "document",
+      "source_file": "reports/synth_summary.md",
+      "source_location": "L1",
+      "id": "reports_synth_summary_md",
+      "community": 51,
+      "norm_label": "synth_summary.md"
+    },
+    {
+      "label": "Synthesis Check Summary",
+      "file_type": "document",
+      "source_file": "reports/synth_summary.md",
+      "source_location": "L1",
+      "id": "reports_synth_summary_synthesis_check_summary",
+      "community": 51,
+      "norm_label": "synthesis check summary"
+    },
+    {
+      "label": "\u603b\u4f53\u7ed3\u6784",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L3",
+      "community": 2,
+      "norm_label": "\u603b\u4f53\u7ed3\u6784",
+      "id": "docs_architecture_\u603b\u4f53\u7ed3\u6784"
+    },
+    {
+      "label": "\u65f6\u949f\u57df\u5212\u5206",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L14",
+      "community": 2,
+      "norm_label": "\u65f6\u949f\u57df\u5212\u5206",
+      "id": "docs_architecture_\u65f6\u949f\u57df\u5212\u5206"
+    },
+    {
+      "label": "\u6570\u636e\u6d41\u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L24",
+      "community": 2,
+      "norm_label": "\u6570\u636e\u6d41\u8bf4\u660e",
+      "id": "docs_architecture_\u6570\u636e\u6d41\u8bf4\u660e"
+    },
+    {
+      "label": "\u5173\u952e\u8bbe\u8ba1\u70b9",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L38",
+      "community": 2,
+      "norm_label": "\u5173\u952e\u8bbe\u8ba1\u70b9",
+      "id": "docs_architecture_\u5173\u952e\u8bbe\u8ba1\u70b9"
+    },
+    {
+      "label": "\u62a5\u544a\u5c55\u793a\u5efa\u8bae",
+      "file_type": "document",
+      "source_file": "docs/architecture.md",
+      "source_location": "L46",
+      "community": 2,
+      "norm_label": "\u62a5\u544a\u5c55\u793a\u5efa\u8bae",
+      "id": "docs_architecture_\u62a5\u544a\u5c55\u793a\u5efa\u8bae"
+    },
+    {
+      "label": "\u9876\u5c42\u6a21\u5757 `spec_analyzer_top`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L3",
+      "community": 1,
+      "norm_label": "\u9876\u5c42\u6a21\u5757 `spec_analyzer_top`",
+      "id": "docs_interface_spec_\u9876\u5c42\u6a21\u5757_spec_analyzer_top"
+    },
+    {
+      "label": "DDS \u4e0e\u7a97\u53e3\u6a21\u5757",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L23",
+      "community": 1,
+      "norm_label": "dds \u4e0e\u7a97\u53e3\u6a21\u5757",
+      "id": "docs_interface_spec_dds_\u4e0e\u7a97\u53e3\u6a21\u5757"
+    },
+    {
+      "label": "`phase_acc`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L25",
+      "community": 1,
+      "norm_label": "`phase_acc`",
+      "id": "docs_interface_spec_phase_acc"
+    },
+    {
+      "label": "`dds_signal_gen`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L29",
+      "community": 1,
+      "norm_label": "`dds_signal_gen`",
+      "id": "docs_interface_spec_dds_signal_gen"
+    },
+    {
+      "label": "`win_mul_optional`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L33",
+      "community": 1,
+      "norm_label": "`win_mul_optional`",
+      "id": "docs_interface_spec_win_mul_optional"
+    },
+    {
+      "label": "FIFO \u6a21\u5757",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L37",
+      "community": 1,
+      "norm_label": "fifo \u6a21\u5757",
+      "id": "docs_interface_spec_fifo_\u6a21\u5757"
+    },
+    {
+      "label": "`async_fifo`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L39",
+      "community": 1,
+      "norm_label": "`async_fifo`",
+      "id": "docs_interface_spec_async_fifo"
+    },
+    {
+      "label": "FFT \u94fe\u8def",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L51",
+      "community": 1,
+      "norm_label": "fft \u94fe\u8def",
+      "id": "docs_interface_spec_fft_\u94fe\u8def"
+    },
+    {
+      "label": "\u540e\u5904\u7406\u6a21\u5757",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L67",
+      "community": 5,
+      "norm_label": "\u540e\u5904\u7406\u6a21\u5757",
+      "id": "docs_interface_spec_\u540e\u5904\u7406\u6a21\u5757"
+    },
+    {
+      "label": "`fft_mag_calc`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L69",
+      "community": 5,
+      "norm_label": "`fft_mag_calc`",
+      "id": "docs_interface_spec_fft_mag_calc"
+    },
+    {
+      "label": "`peak_detector`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L79",
+      "community": 5,
+      "norm_label": "`peak_detector`",
+      "id": "docs_interface_spec_peak_detector"
+    },
+    {
+      "label": "`mag_compress`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L83",
+      "community": 5,
+      "norm_label": "`mag_compress`",
+      "id": "docs_interface_spec_mag_compress"
+    },
+    {
+      "label": "`spec_bin_buffer`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L87",
+      "community": 5,
+      "norm_label": "`spec_bin_buffer`",
+      "id": "docs_interface_spec_spec_bin_buffer"
+    },
+    {
+      "label": "VGA \u6a21\u5757",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L91",
+      "community": 4,
+      "norm_label": "vga \u6a21\u5757",
+      "id": "docs_interface_spec_vga_\u6a21\u5757"
+    },
+    {
+      "label": "`vga_timing_gen`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L93",
+      "community": 4,
+      "norm_label": "`vga_timing_gen`",
+      "id": "docs_interface_spec_vga_timing_gen"
+    },
+    {
+      "label": "`spectrum_renderer`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L104",
+      "community": 4,
+      "norm_label": "`spectrum_renderer`",
+      "id": "docs_interface_spec_spectrum_renderer"
+    },
+    {
+      "label": "`osd_text_gen`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L108",
+      "community": 4,
+      "norm_label": "`osd_text_gen`",
+      "id": "docs_interface_spec_osd_text_gen"
+    },
+    {
+      "label": "`overlay_mux`",
+      "file_type": "document",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L112",
+      "community": 4,
+      "norm_label": "`overlay_mux`",
+      "id": "docs_interface_spec_overlay_mux"
+    },
+    {
+      "label": "1. \u521b\u5efa Vivado \u5de5\u7a0b",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L3",
+      "community": 3,
+      "norm_label": "1. \u521b\u5efa vivado \u5de5\u7a0b",
+      "id": "docs_test_tutorial_1_\u521b\u5efa_vivado_\u5de5\u7a0b"
+    },
+    {
+      "label": "2. \u8fd0\u884c\u9876\u5c42\u4eff\u771f",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L13",
+      "community": 3,
+      "norm_label": "2. \u8fd0\u884c\u9876\u5c42\u4eff\u771f",
+      "id": "docs_test_tutorial_2_\u8fd0\u884c\u9876\u5c42\u4eff\u771f"
+    },
+    {
+      "label": "3. \u5207\u6362\u72ec\u7acb testbench",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L29",
+      "community": 3,
+      "norm_label": "3. \u5207\u6362\u72ec\u7acb testbench",
+      "id": "docs_test_tutorial_3_\u5207\u6362\u72ec\u7acb_testbench"
+    },
+    {
+      "label": "5. \u751f\u6210 FFT IP",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L70",
+      "community": 3,
+      "norm_label": "5. \u751f\u6210 fft ip",
+      "id": "docs_test_tutorial_5_\u751f\u6210_fft_ip"
+    },
+    {
+      "label": "6. \u62a5\u544a\u622a\u56fe\u5efa\u8bae",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L80",
+      "community": 3,
+      "norm_label": "6. \u62a5\u544a\u622a\u56fe\u5efa\u8bae",
+      "id": "docs_test_tutorial_6_\u62a5\u544a\u622a\u56fe\u5efa\u8bae"
+    },
+    {
+      "label": "\u9759\u6001\u68c0\u67e5\u76ee\u6807",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L3",
+      "community": 0,
+      "norm_label": "\u9759\u6001\u68c0\u67e5\u76ee\u6807",
+      "id": "docs_verification_plan_\u9759\u6001\u68c0\u67e5\u76ee\u6807"
+    },
+    {
+      "label": "Testbench \u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L11",
+      "community": 0,
+      "norm_label": "testbench \u8bf4\u660e",
+      "id": "docs_verification_plan_testbench_\u8bf4\u660e"
+    },
+    {
+      "label": "`tb_async_fifo`",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L13",
+      "community": 0,
+      "norm_label": "`tb_async_fifo`",
+      "id": "docs_verification_plan_tb_async_fifo"
+    },
+    {
+      "label": "`tb_fft_chain`",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L24",
+      "community": 0,
+      "norm_label": "`tb_fft_chain`",
+      "id": "docs_verification_plan_tb_fft_chain"
+    },
+    {
+      "label": "`tb_vga_render`",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L34",
+      "community": 0,
+      "norm_label": "`tb_vga_render`",
+      "id": "docs_verification_plan_tb_vga_render"
+    },
+    {
+      "label": "`tb_spec_analyzer_top`",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L43",
+      "community": 0,
+      "norm_label": "`tb_spec_analyzer_top`",
+      "id": "docs_verification_plan_tb_spec_analyzer_top"
+    },
+    {
+      "label": "\u6ce2\u5f62\u622a\u56fe\u6e05\u5355",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L53",
+      "community": 0,
+      "norm_label": "\u6ce2\u5f62\u622a\u56fe\u6e05\u5355",
+      "id": "docs_verification_plan_\u6ce2\u5f62\u622a\u56fe\u6e05\u5355"
+    },
+    {
+      "label": "\u4eff\u771f\u8fb9\u754c\u8bf4\u660e",
+      "file_type": "document",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L64",
+      "community": 0,
+      "norm_label": "\u4eff\u771f\u8fb9\u754c\u8bf4\u660e",
+      "id": "docs_verification_plan_\u4eff\u771f\u8fb9\u754c\u8bf4\u660e"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "readme_md",
+      "target": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "target": "spectrumanalyzer_readme_1_\u9879\u76ee\u7b80\u4ecb",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "target": "spectrumanalyzer_readme_2_\u5f53\u524d\u9a8c\u6536\u72b6\u6001",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "target": "spectrumanalyzer_readme_3_\u4e00\u952e\u6d41\u7a0b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "target": "spectrumanalyzer_readme_4_\u811a\u672c\u8bf4\u660e",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "target": "spectrumanalyzer_readme_5_ip_\u72b6\u6001",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "target": "spectrumanalyzer_readme_6_\u5de5\u7a0b\u76ee\u5f55",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "README.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
+      "target": "spectrumanalyzer_readme_7_\u6587\u6863\u5165\u53e3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_md",
+      "target": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_1_\u603b\u4f53\u7ed3\u6784",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_2_\u65f6\u949f\u57df\u5212\u5206",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_3_\u6570\u636e\u6d41\u8bf4\u660e",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_4_\u624b\u5199_rtl_\u4e0e_ip_\u5206\u5de5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_5_\u7535\u8def\u56fe\u8bb2\u89e3\u987a\u5e8f",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_\u5173\u952e\u8bbe\u8ba1\u70b9"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_\u603b\u4f53\u7ed3\u6784"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_\u62a5\u544a\u5c55\u793a\u5efa\u8bae"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_\u6570\u636e\u6d41\u8bf4\u660e"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/architecture.md",
+      "source_location": "L14",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
+      "target": "docs_architecture_\u65f6\u949f\u57df\u5212\u5206"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_md",
+      "target": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_0_\u4f7f\u7528\u65b9\u5f0f",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L232",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_10_\u8fb9\u754c\u4e0e\u6ce8\u610f\u4e8b\u9879",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L241",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_11_\u5f53\u524d\u5df2\u77e5\u72b6\u6001\u63d0\u793a",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L251",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_12_2026_05_31_\u672c\u8f6e\u5b9e\u73b0\u72b6\u6001",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_1_\u603b\u76ee\u6807",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_2_\u6700\u7ec8\u7cfb\u7edf\u94fe\u8def",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_3_ip_\u8865\u9f50\u8981\u6c42",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L81",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_4_vivado_\u811a\u672c\u8981\u6c42",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L110",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_5_\u7efc\u5408\u7535\u8def\u56fe\u8981\u6c42",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L134",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_6_\u6587\u6863\u66f4\u65b0\u8981\u6c42",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L151",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_7_latex_\u5b9e\u9a8c\u62a5\u544a\u8981\u6c42",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L180",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_8_graphify_\u8981\u6c42",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L203",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_9_\u9a8c\u6536\u547d\u4ee4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_md",
+      "target": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_1_\u9876\u5c42\u6a21\u5757_spec_analyzer_top",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_2_dds_\u4e0e_hann_\u7a97\u63a5\u53e3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_3_fifo_\u63a5\u53e3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_4_fft_axi_stream_\u63a5\u53e3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L84",
+      "weight": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_5_\u540e\u5904\u7406\u63a5\u53e3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_6_vga_\u63a5\u53e3",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L23",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_dds_\u4e0e\u7a97\u53e3\u6a21\u5757"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L51",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_fft_\u94fe\u8def"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L37",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_fifo_\u6a21\u5757"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L91",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_vga_\u6a21\u5757"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L67",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_\u540e\u5904\u7406\u6a21\u5757"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
+      "target": "docs_interface_spec_\u9876\u5c42\u6a21\u5757_spec_analyzer_top"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "docs_interface_spec_4_fft_axi_stream_\u63a5\u53e3",
+      "target": "docs_interface_spec_fft_frame_ctrl",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "docs_interface_spec_4_fft_axi_stream_\u63a5\u53e3",
+      "target": "docs_interface_spec_xfft_wrapper",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_fft_\u94fe\u8def",
+      "target": "docs_interface_spec_fft_frame_ctrl"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L57",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_fft_\u94fe\u8def",
+      "target": "docs_interface_spec_xfft_wrapper"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_ip_integration_md",
+      "target": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
+      "target": "docs_ip_integration_1_\u603b\u89c8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
+      "target": "docs_ip_integration_2_ip_\u6e05\u5355",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
+      "target": "docs_ip_integration_3_\u751f\u6210\u811a\u672c",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
+      "target": "docs_ip_integration_4_fft_ip_\u63a5\u5165\u70b9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
+      "target": "docs_ip_integration_5_fifo_ip_\u53ef\u9009\u63a5\u5165\u70b9",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/ip_integration.md",
+      "source_location": "L65",
+      "weight": 1.0,
+      "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
+      "target": "docs_ip_integration_6_rom_bram_\u5c55\u793a_ip",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "docs_synthesis_schematic_md",
+      "target": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
+      "target": "docs_synthesis_schematic_1_\u9a8c\u6536\u76ee\u6807",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
+      "target": "docs_synthesis_schematic_2_\u751f\u6210\u7efc\u5408\u7ed3\u679c",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
+      "target": "docs_synthesis_schematic_3_vivado_gui_\u67e5\u770b\u6b65\u9aa4",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
+      "target": "docs_synthesis_schematic_4_\u7b54\u8fa9\u8bb2\u89e3\u53e3\u5f84",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/synthesis_schematic.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
+      "target": "docs_synthesis_schematic_5_ip_\u4e0e_rtl_\u6807\u6ce8",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_md",
+      "target": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_1_\u521b\u5efa_vivado_\u5de5\u7a0b"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_1_\u521b\u5efa\u5b8c\u6574_vivado_\u5de5\u7a0b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_2_\u6279\u91cf\u8fd0\u884c_4_\u4e2a_testbench",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_2_\u8fd0\u884c\u9876\u5c42\u4eff\u771f"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_3_\u5207\u6362\u72ec\u7acb_testbench"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_3_\u5355\u72ec\u8fd0\u884c\u67d0\u4e2a_testbench",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_4_\u5404\u6d4b\u8bd5\u901a\u8fc7\u6807\u51c6"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L70",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_5_\u751f\u6210_fft_ip"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_5_\u7efc\u5408\u68c0\u67e5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L80",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_6_\u62a5\u544a\u622a\u56fe\u5efa\u8bae"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
+      "target": "docs_test_tutorial_6_\u7535\u8def\u56fe\u67e5\u770b",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L58",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_4_\u5404\u6d4b\u8bd5\u901a\u8fc7\u6807\u51c6",
+      "target": "docs_test_tutorial_fft_\u94fe\u6d4b\u8bd5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_4_\u5404\u6d4b\u8bd5\u901a\u8fc7\u6807\u51c6",
+      "target": "docs_test_tutorial_fifo_\u6d4b\u8bd5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_4_\u5404\u6d4b\u8bd5\u901a\u8fc7\u6807\u51c6",
+      "target": "docs_test_tutorial_vga_\u6d4b\u8bd5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L66",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_4_\u5404\u6d4b\u8bd5\u901a\u8fc7\u6807\u51c6",
+      "target": "docs_test_tutorial_\u9876\u5c42\u6d4b\u8bd5"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_md",
+      "target": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_1_\u9a8c\u8bc1\u76ee\u6807",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_2_\u9759\u6001\u68c0\u67e5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_3_testbench",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_4_\u7efc\u5408\u68c0\u67e5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L50",
+      "weight": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_5_ip_\u72b6\u6001\u68c0\u67e5",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L62",
+      "weight": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_6_\u7535\u8def\u56fe\u9a8c\u6536",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L11",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_testbench_\u8bf4\u660e"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L64",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_\u4eff\u771f\u8fb9\u754c\u8bf4\u660e"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L53",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_\u6ce2\u5f62\u622a\u56fe\u6e05\u5355"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
+      "target": "docs_verification_plan_\u9759\u6001\u68c0\u67e5\u76ee\u6807"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/ip_status.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "reports_ip_status_md",
+      "target": "reports_ip_status_ip_status_report",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/schematic_guide.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "reports_schematic_guide_md",
+      "target": "reports_schematic_guide_\u7f01\u714e\u608e_\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d_\u5b58\u69d1",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/sim_summary.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "reports_sim_summary_md",
+      "target": "reports_sim_summary_simulation_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/synth_summary.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "reports_synth_summary_md",
+      "target": "reports_synth_summary_synthesis_check_summary",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L29",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_dds_\u4e0e\u7a97\u53e3\u6a21\u5757",
+      "target": "docs_interface_spec_dds_signal_gen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L25",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_dds_\u4e0e\u7a97\u53e3\u6a21\u5757",
+      "target": "docs_interface_spec_phase_acc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L33",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_dds_\u4e0e\u7a97\u53e3\u6a21\u5757",
+      "target": "docs_interface_spec_win_mul_optional"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L39",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_fifo_\u6a21\u5757",
+      "target": "docs_interface_spec_async_fifo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L69",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u540e\u5904\u7406\u6a21\u5757",
+      "target": "docs_interface_spec_fft_mag_calc"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u540e\u5904\u7406\u6a21\u5757",
+      "target": "docs_interface_spec_mag_compress"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L79",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u540e\u5904\u7406\u6a21\u5757",
+      "target": "docs_interface_spec_peak_detector"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L87",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_\u540e\u5904\u7406\u6a21\u5757",
+      "target": "docs_interface_spec_spec_bin_buffer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L108",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_vga_\u6a21\u5757",
+      "target": "docs_interface_spec_osd_text_gen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L112",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_vga_\u6a21\u5757",
+      "target": "docs_interface_spec_overlay_mux"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L104",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_vga_\u6a21\u5757",
+      "target": "docs_interface_spec_spectrum_renderer"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/interface_spec.md",
+      "source_location": "L93",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_interface_spec_vga_\u6a21\u5757",
+      "target": "docs_interface_spec_vga_timing_gen"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L13",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_testbench_\u8bf4\u660e",
+      "target": "docs_verification_plan_tb_async_fifo"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L24",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_testbench_\u8bf4\u660e",
+      "target": "docs_verification_plan_tb_fft_chain"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L43",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_testbench_\u8bf4\u660e",
+      "target": "docs_verification_plan_tb_spec_analyzer_top"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/verification_plan.md",
+      "source_location": "L34",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_verification_plan_testbench_\u8bf4\u660e",
+      "target": "docs_verification_plan_tb_vga_render"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "c0a1187cd4fb7a3cced59d76cedfccc6af428aa8"
+}

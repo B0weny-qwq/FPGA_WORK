@@ -1,66 +1,80 @@
 # 验证计划
 
-## 静态检查目标
+## 1. 验证目标
 
-- 检查 README 中要求的目录和文件是否全部存在；
-- 检查 RTL 文件名和模块名是否一致；
-- 检查每个 Verilog/SystemVerilog 文件是否只有一个顶层模块定义；
-- 检查顶层是否连接完整链路：DDS、窗口、FIFO、FFT 帧控制、FFT 封装、幅度计算、峰值检测、频谱缓存和 VGA；
-- 检查 testbench 是否包含复位、激励、结束条件和自检查。
+本工程按“可仿真、可综合、IP 真实接入、电路图可解释、文档一致”进行验收。当前推荐命令为：
 
-## Testbench 说明
+```powershell
+cd C:/Users/S/Desktop/FPGA/SpectrumAnalyzer
+D:/FPGA/2025.2/Vivado/bin/vivado.bat -mode batch -source scripts/setup_full_project.tcl
+D:/FPGA/2025.2/Vivado/bin/vivado.bat -mode batch -source scripts/run_all_sims.tcl
+D:/FPGA/2025.2/Vivado/bin/vivado.bat -mode batch -source scripts/run_synth_check.tcl
+C:/AgentHarness/bin/graphify.ps1 update .
+```
 
-### `tb_async_fifo`
+## 2. 静态检查
 
-验证目标：独立验证异步 FIFO。
+- RTL 顶层链路是否包含 DDS、Hann 窗、FIFO、FFT 帧控制、FFT IP 封装、幅度计算、峰值检测、压缩、频谱缓存、VGA。
+- `ip/` 下是否存在计划 IP 的 `.xci`。
+- `xfft_wrapper` 在综合路径是否实例化 `xfft_256`。
+- `async_fifo_bridge` 默认是否仍走手写 `async_fifo`，可选宏是否只影响 FIFO IP 展示路径。
+- `scripts/run_synth_check.tcl` 是否使用 `flatten_hierarchy none` 保留层级。
+- README、`docs/` 和 `report/report.tex` 是否与实际实现一致。
 
-检查内容：
+## 3. Testbench
 
-- 写入一组连续数据时不应误报 `full`；
-- 读出数据顺序必须与写入顺序一致；
-- 全部读出后 `empty` 应为高；
-- 只有 `rd_valid` 为高时才检查读数据。
+| Testbench | 验证内容 | 当前结果 |
+| --- | --- | --- |
+| `tb_async_fifo` | 手写异步 FIFO 写读顺序、`empty/full`、`rd_valid` | 通过 |
+| `tb_fft_chain` | DDS -> Hann -> FIFO -> 行为级 DFT -> 幅度 -> 峰值 | 通过，单音主峰为频点 8 |
+| `tb_vga_render` | VGA 有效像素计数和频谱渲染输出 | 通过 |
+| `tb_spec_analyzer_top` | 顶层端到端链路、峰值输出、FIFO 状态 | 通过 |
 
-### `tb_fft_chain`
+仿真使用 `XFFT_BEHAVIORAL_DFT_SIM`，目的是让自检快速稳定。综合验收另行确认 `xfft_256` IP。
 
-验证目标：验证 DDS 到 FFT 后处理链路。
+## 4. 综合检查
 
-检查内容：
+`scripts/run_synth_check.tcl` 执行 `synth_1`，并导出：
 
-- 使用 `freq_word = 32'h0800_0000` 产生单音正弦；
-- 对 256 点 FFT 来说，主峰应接近第 8 个频点，或接近镜像频点 248；
-- FFT 输入 `tlast` 相关事件标志不应报错。
+| 文件 | 说明 |
+| --- | --- |
+| `reports/synth_utilization.rpt` | 综合资源利用率 |
+| `reports/timing_summary.rpt` | 时序概要 |
+| `reports/hierarchy.rpt` | 层级/结构说明 |
+| `reports/compile_order.rpt` | 编译顺序 |
+| `reports/spec_analyzer_top_synth.dcp` | 综合 checkpoint |
+| `reports/synth_summary.md` | 综合摘要 |
 
-### `tb_vga_render`
+当前 Vivado 2025.2 综合结果为：`spec_analyzer_top` 完成综合，0 error、0 critical warning。打开综合 run 时，Vivado 读取 `ip/xfft_256_1/xfft_256.dcp`，对应单元为 `u_xfft_wrapper/u_xfft_256`。
 
-验证目标：独立验证 VGA 时序和频谱渲染。
+## 5. IP 状态检查
 
-检查内容：
+`scripts/gen_ip_all.tcl` 会生成或读取以下 IP，并写出 `reports/ip_status.md`：
 
-- 一帧有效像素数量应为 `640 * 480`；
-- 频谱渲染器应产生至少一个柱状图或网格像素。
+- `xfft_256`
+- `async_sample_fifo_ip`
+- `sine_rom_256`
+- `hann_rom_256`
+- `spec_bin_bram`
 
-### `tb_spec_analyzer_top`
+验收时重点说明：`xfft_256` 是综合主链路真实使用的 IP；其他 IP 是可选/展示型 IP，已加入工程用于答辩说明。
 
-验证目标：验证系统顶层端到端链路。
+## 6. 电路图验收
 
-检查内容：
+在 Vivado 中打开 elaborated design 或 synthesized design，从 `spec_analyzer_top` 沿数据流展开，至少应能识别：
 
-- 等待至少两个 `debug_peak_valid` 脉冲；
-- 峰值幅度不能一直为 0；
-- FIFO 不应同时报告 `full` 和 `empty`。
+- `dds_signal_gen`
+- `win_mul_optional`
+- `async_fifo_bridge` / `async_fifo`
+- `fft_frame_ctrl`
+- `xfft_wrapper` / `xfft_256`
+- `fft_mag_calc`
+- `peak_detector`
+- `mag_compress`
+- `spec_bin_buffer`
+- `vga_timing_gen`
+- `spectrum_renderer`
+- `osd_text_gen`
+- `overlay_mux`
 
-## 波形截图清单
-
-建议保存以下信号作为课程报告证据：
-
-- `sample_data`、`sample_valid`、`wave_sel`、`freq_word`；
-- `fifo_full`、`fifo_empty`、`fifo_rd_valid`；
-- `fft_s_axis_tvalid`、`fft_s_axis_tready`、`fft_s_axis_tlast`；
-- `fft_tvalid`、`fft_tlast`、`mag_valid`；
-- `peak_bin`、`peak_mag`、`peak_valid`；
-- `vga_hs`、`vga_vs`、`active_video`、`pixel_x`、`pixel_y`、RGB。
-
-## 仿真边界说明
-
-当前 `xfft_wrapper` 内部是行为级 DFT 仿真模型，目的是让工程在没有 Vivado FFT IP 文件的情况下也能说明完整链路。若需要接入真实 FFT IP，请先运行 `scripts/gen_ip_fft.tcl`，再只修改 `rtl/fft/xfft_wrapper.v`，其他模块接口保持不变。
+截图或报告中应明确标注哪些是手写 RTL，哪些是真实 IP 或展示 IP。

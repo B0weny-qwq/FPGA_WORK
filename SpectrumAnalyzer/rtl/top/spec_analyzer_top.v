@@ -146,10 +146,10 @@ module spec_analyzer_top #(
         .debug_coeff_addr (window_addr)
     );
 
-    async_fifo #(
+    async_fifo_bridge #(
         .DATA_WIDTH (DATA_WIDTH),
         .ADDR_WIDTH (FIFO_ADDR_WIDTH)
-    ) u_async_fifo (
+    ) u_async_fifo_bridge (
         .clk_wr         (clk_sample),
         .wr_rst_n       (sample_rst_n),
         .clk_rd         (clk_fft),

@@ -1,0 +1,377 @@
+{
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\xfft_256_1\\xfft_256_sv.sv": {
+    "mtime": 1780210816.125939,
+    "ast_hash": "76ddaf4856b92bd2e79edad6090404ba",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\common\\clk_rst_gen.v": {
+    "mtime": 1779450457.31236,
+    "ast_hash": "448be317900eff6ee8c9f8655d1118d5",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\common\\pulse_sync.v": {
+    "mtime": 1779450457.3144655,
+    "ast_hash": "d9c29bb8293fd02c2167e9a7754cf0f2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\common\\sync_reset.v": {
+    "mtime": 1779450457.3109212,
+    "ast_hash": "a645b7a4af2e994eb2cccaf0218d1982",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\ctrl\\ctrl_model.v": {
+    "mtime": 1779450891.5285115,
+    "ast_hash": "a1be36e9b5fb8e7d666053355917dbc3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\dds\\dds_signal_gen.v": {
+    "mtime": 1779450457.3227878,
+    "ast_hash": "67d7a39482b2a1d926284a2481d07e8b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\dds\\phase_acc.v": {
+    "mtime": 1779450457.3169355,
+    "ast_hash": "08f359ef19b775813ab6f3c7ad54a4ed",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\dds\\wave_gen_sawtooth.v": {
+    "mtime": 1779450457.3217576,
+    "ast_hash": "654d48ba1a75c427764614fab2fb8868",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\dds\\wave_gen_square.v": {
+    "mtime": 1779450457.319341,
+    "ast_hash": "13123a354ad483a7d801b73aebb26168",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\dds\\wave_gen_triangle.v": {
+    "mtime": 1779450457.3207269,
+    "ast_hash": "dce96cf2d1275ebb371df8b09dba75cc",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\dds\\wave_rom_sin.v": {
+    "mtime": 1779462337.8240857,
+    "ast_hash": "860c730715ab244d4f36119acfbf6b53",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fft\\fft_cfg_rom.v": {
+    "mtime": 1779450511.5184245,
+    "ast_hash": "2ef547fdafbe4f130ddb08932d78979c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fft\\fft_frame_ctrl.v": {
+    "mtime": 1780212922.069764,
+    "ast_hash": "055fdaaca018040719300033d6a58a27",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fft\\xfft_wrapper.v": {
+    "mtime": 1780210544.4379623,
+    "ast_hash": "e659f755e2afbf29043d53ee5f66c81e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fifo\\async_fifo.v": {
+    "mtime": 1779450511.5164318,
+    "ast_hash": "88f552a378d47c836eadfbbda9a8c389",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fifo\\fifo_mem.v": {
+    "mtime": 1779450511.5125632,
+    "ast_hash": "ce1caa6fdf65d5f03d505333094098ab",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fifo\\fifo_rd_ctrl.v": {
+    "mtime": 1779450511.5154166,
+    "ast_hash": "a7b3acdc0a90eb880022e9521420ee54",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fifo\\fifo_wr_ctrl.v": {
+    "mtime": 1779450511.513787,
+    "ast_hash": "d6aeb4a2af090ced35a0e477d8ad5f7c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fifo\\gray_conv.v": {
+    "mtime": 1779450511.5075552,
+    "ast_hash": "cf61165e58d1f327f9b864c5cac70289",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fifo\\gray_sync.v": {
+    "mtime": 1779450511.5105557,
+    "ast_hash": "18da8b1eff57cbe7ea709214e8db76ad",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\postproc\\bin_to_height.v": {
+    "mtime": 1779450511.5251572,
+    "ast_hash": "296d6f69b3b2e850895649ec06f1257d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\postproc\\fft_mag_calc.v": {
+    "mtime": 1779450511.5211532,
+    "ast_hash": "9765ffd37a529ca89b03a869c81db7a3",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\postproc\\mag_compress.v": {
+    "mtime": 1779450511.5221574,
+    "ast_hash": "706451bd1f1b22d916527603dcf44959",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\postproc\\peak_detector.v": {
+    "mtime": 1779450891.5295022,
+    "ast_hash": "6dada66f158e64d9db3ee90ea5c5a0ec",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\postproc\\spec_bin_buffer.v": {
+    "mtime": 1779450511.5241578,
+    "ast_hash": "b9f60a8b29cffce287f1e708bf6e036c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\sim_model\\frame_dump_model.v": {
+    "mtime": 1779450565.9639027,
+    "ast_hash": "9e88f2446e0559f9a966784b9bbec0ad",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\top\\spec_analyzer_top.v": {
+    "mtime": 1780213589.3727934,
+    "ast_hash": "d249b623729ce991d331988686467089",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\vga\\font_rom_8x16.v": {
+    "mtime": 1779450565.9671245,
+    "ast_hash": "2dc6ee60e773550779bca00ab4fa2a9b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\vga\\osd_text_gen.v": {
+    "mtime": 1779450565.9685667,
+    "ast_hash": "0b6267ef2b568b4139949c72a6cc7b99",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\vga\\overlay_mux.v": {
+    "mtime": 1779450565.9709823,
+    "ast_hash": "3597f0411665dbb68fca8ff147b55f22",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\vga\\spectrum_renderer.v": {
+    "mtime": 1779450565.9661205,
+    "ast_hash": "4067d8526e1eb1415c75529f69031e4c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\vga\\vga_timing_gen.v": {
+    "mtime": 1779450565.9649312,
+    "ast_hash": "3a9a99eddf936fca1e294a4d8ca61481",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\window\\hann_rom.v": {
+    "mtime": 1779462346.2340617,
+    "ast_hash": "9ef8e0dc88c50d361d66870676206f44",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\window\\win_mul_optional.v": {
+    "mtime": 1779450457.326308,
+    "ast_hash": "8564ee5fdf9cc9170195f25fa52e5e9c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\sim\\tb\\tb_async_fifo.sv": {
+    "mtime": 1779475999.72083,
+    "ast_hash": "30378777e95a20eed3f69cedb055815b",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\sim\\tb\\tb_fft_chain.sv": {
+    "mtime": 1779475999.7223182,
+    "ast_hash": "ac73199236fc34eb4c075dd88bf362aa",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\sim\\tb\\tb_spec_analyzer_top.sv": {
+    "mtime": 1779475999.7237287,
+    "ast_hash": "ed6eded84b0ea300eac3af86955fe289",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\sim\\tb\\tb_vga_render.sv": {
+    "mtime": 1779475999.724743,
+    "ast_hash": "affe2c3cfcaef40557cdf4b3380007ec",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\README.md": {
+    "mtime": 1780214864.5709605,
+    "ast_hash": "e0f30f7206e29951767c301e64c57e50",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\architecture.md": {
+    "mtime": 1780214864.5739605,
+    "ast_hash": "17c451a54dee185864ec59fc2b9d944e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\interface_spec.md": {
+    "mtime": 1780214864.5749602,
+    "ast_hash": "c57e50c8b4dc6d8d663c4feab28de39e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\test_tutorial.md": {
+    "mtime": 1780214864.5789602,
+    "ast_hash": "dafeb0d7434c03186f045eb5eb7c907a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\verification_plan.md": {
+    "mtime": 1780214864.5769596,
+    "ast_hash": "5c121e2aa78e96fd7a991b75997ff607",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\xfft_256_1\\testbench_vhdl.txt": {
+    "mtime": 1780210816.4264846,
+    "ast_hash": "68b329da9893e34099c7d8ad5cb9c940",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\xfft_256_1\\doc\\xfft_v9_1_changelog.txt": {
+    "mtime": 1780210816.439485,
+    "ast_hash": "1c9b283e1e427ce9bad625dc1917d18d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\async_sample_fifo_ip\\async_sample_fifo_ip_sv.sv": {
+    "mtime": 1780213632.641258,
+    "ast_hash": "d5eb288850254646ece433ad7e104577",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\async_sample_fifo_ip\\hdl\\fifo_generator_v13_2_rfs.v": {
+    "mtime": 1780213632.8003192,
+    "ast_hash": "2b72b4a2f83a297c680eb14074c6c944",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\async_sample_fifo_ip\\sim\\async_sample_fifo_ip.v": {
+    "mtime": 1780213632.8093226,
+    "ast_hash": "4c22d3768af5d7e1bfd16f1f22ad2f2f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\async_sample_fifo_ip\\simulation\\fifo_generator_vlog_beh.v": {
+    "mtime": 1780213632.7913194,
+    "ast_hash": "4d3c6570570ae1575654f0d55b01158e",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\hann_rom_256\\hann_rom_256_sv.sv": {
+    "mtime": 1780213634.4119153,
+    "ast_hash": "57133dec626ce5f75aeb09b6ed8bc886",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\hann_rom_256\\sim\\hann_rom_256.v": {
+    "mtime": 1780213634.5918,
+    "ast_hash": "9a405622c3908883726eed94ab6a1eee",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\hann_rom_256\\simulation\\blk_mem_gen_v8_4.v": {
+    "mtime": 1780213634.5818188,
+    "ast_hash": "3ce1917417d8d53ba69cad7a9e9aab5c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\sine_rom_256\\sine_rom_256_sv.sv": {
+    "mtime": 1780213633.6420193,
+    "ast_hash": "0bf9c6b3824bcf41c8327ef9eb9bf90f",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\sine_rom_256\\sim\\sine_rom_256.v": {
+    "mtime": 1780213633.8205345,
+    "ast_hash": "49774be04080780a780df8c1a99dbe15",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\sine_rom_256\\simulation\\blk_mem_gen_v8_4.v": {
+    "mtime": 1780213633.8125327,
+    "ast_hash": "3ce1917417d8d53ba69cad7a9e9aab5c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\spec_bin_bram\\spec_bin_bram_sv.sv": {
+    "mtime": 1780213635.3617258,
+    "ast_hash": "fb351b9ef6057c38cf864f0636f0e2b8",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\spec_bin_bram\\sim\\spec_bin_bram.v": {
+    "mtime": 1780213635.5412588,
+    "ast_hash": "90124b41e9e44e080a5a521194065292",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\spec_bin_bram\\simulation\\blk_mem_gen_v8_4.v": {
+    "mtime": 1780213635.5322578,
+    "ast_hash": "3ce1917417d8d53ba69cad7a9e9aab5c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\xfft_256_1\\xfft_256_sim_netlist.v": {
+    "mtime": 1780214233.3042634,
+    "ast_hash": "e35eb01e012ea7b21c8f2a0c1edcec8c",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\xfft_256_1\\xfft_256_stub.v": {
+    "mtime": 1780214232.42601,
+    "ast_hash": "ec7ba6740e51cc6890d4056e52e41624",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\fifo\\async_fifo_bridge.v": {
+    "mtime": 1780213731.8154488,
+    "ast_hash": "5618c3e58b0404077fb5805c09cd0a24",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\dfx_runtime.txt": {
+    "mtime": 1780215488.518027,
+    "ast_hash": "f36d9af57ef65cf42ec6a915afc49563",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\full_score_goal.md": {
+    "mtime": 1780215041.222234,
+    "ast_hash": "62fe6e88b963ebdf59f4645deaecc57a",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\ip_integration.md": {
+    "mtime": 1780214864.5799606,
+    "ast_hash": "05e48f5d17c606c5721b9112ec18276d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\synthesis_schematic.md": {
+    "mtime": 1780214864.5799606,
+    "ast_hash": "d184bb31325045ca36954b57ac679710",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\async_sample_fifo_ip\\doc\\fifo_generator_v13_2_changelog.txt": {
+    "mtime": 1780213632.8183222,
+    "ast_hash": "d77d03bd14f12164422fd3098360cf13",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\hann_rom_256\\doc\\blk_mem_gen_v8_4_changelog.txt": {
+    "mtime": 1780213634.670961,
+    "ast_hash": "5d5933a3191b960204d5681e7ee73600",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\sine_rom_256\\doc\\blk_mem_gen_v8_4_changelog.txt": {
+    "mtime": 1780213633.909047,
+    "ast_hash": "5d5933a3191b960204d5681e7ee73600",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\spec_bin_bram\\doc\\blk_mem_gen_v8_4_changelog.txt": {
+    "mtime": 1780213635.6337607,
+    "ast_hash": "5d5933a3191b960204d5681e7ee73600",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\reports\\ip_status.md": {
+    "mtime": 1780215398.0379772,
+    "ast_hash": "a2b02f4098e59e240d5446428dca8d2d",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\reports\\schematic_guide.md": {
+    "mtime": 1780215148.4456742,
+    "ast_hash": "8471ee3bdabf87a4b41be8148e5e4fe4",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\reports\\sim_summary.md": {
+    "mtime": 1780215368.014444,
+    "ast_hash": "feb63364ff5f9099da5ca5bff8c07757",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\reports\\synth_summary.md": {
+    "mtime": 1780215488.404215,
+    "ast_hash": "d075d2c3533f2876ec093551fcc78fc2",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\report\\report.pdf": {
+    "mtime": 1780215104.1784852,
+    "ast_hash": "b46c91c42e4fd2ce7a78fad11cfaf8be",
+    "semantic_hash": ""
+  },
+  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\report\\SpectrumAnalyzer_Report.pdf": {
+    "mtime": 1780215104.1784852,
+    "ast_hash": "b46c91c42e4fd2ce7a78fad11cfaf8be",
+    "semantic_hash": ""
+  }
+}

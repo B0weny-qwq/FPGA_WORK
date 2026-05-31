@@ -3,7 +3,7 @@
 // 时钟域: clk_fft
 // 输入: AXI-Stream 时域采样数据
 // 输出: AXI-Stream 复数频域数据
-// 说明: 仿真使用行为级 DFT；综合使用接口占位通路，真实上板时替换为 Vivado FFT IP
+// 说明: 仿真使用行为级 DFT；综合使用 Vivado xfft_256 IP
 
 `timescale 1ns / 1ps
 
@@ -168,48 +168,81 @@ module xfft_wrapper #(
 
     localparam [BIN_WIDTH-1:0] LAST_BIN = FFT_SIZE - 1;
 
-    reg [BIN_WIDTH-1:0] input_cnt;
-    reg                 output_busy;
+    wire [15:0]                 fft_cfg_data;
+    wire                        fft_cfg_valid;
+    wire                        ip_cfg_valid;
+    wire                        fft_cfg_ready;
+    wire [2*DATA_WIDTH-1:0]     ip_m_axis_tdata;
+    wire                        ip_m_axis_tvalid;
+    wire                        ip_m_axis_tlast;
+    wire                        ip_event_tlast_missing;
+    wire                        ip_event_tlast_unexpected;
+    wire                        ip_event_frame_started;
+    wire                        ip_event_status_channel_halt;
+    wire                        ip_event_data_in_channel_halt;
+    wire                        ip_event_data_out_channel_halt;
+    reg  [BIN_WIDTH-1:0]        output_cnt;
+    reg                         config_sent;
 
-    assign s_axis_tready = !output_busy;
+    fft_cfg_rom #(
+        .CFG_WIDTH (16)
+    ) u_fft_cfg_rom (
+        .cfg_data  (fft_cfg_data),
+        .cfg_valid (fft_cfg_valid)
+    );
+
+    assign ip_cfg_valid = fft_cfg_valid & ~config_sent;
+
+    xfft_256 u_xfft_256 (
+        .aclk                         (clk_fft),
+        .aresetn                      (fft_rst_n),
+        .s_axis_config_tdata          (fft_cfg_data),
+        .s_axis_config_tvalid         (ip_cfg_valid),
+        .s_axis_config_tready         (fft_cfg_ready),
+        .s_axis_data_tdata            (s_axis_tdata),
+        .s_axis_data_tvalid           (s_axis_tvalid),
+        .s_axis_data_tready           (s_axis_tready),
+        .s_axis_data_tlast            (s_axis_tlast),
+        .m_axis_data_tdata            (ip_m_axis_tdata),
+        .m_axis_data_tvalid           (ip_m_axis_tvalid),
+        .m_axis_data_tready           (m_axis_tready),
+        .m_axis_data_tlast            (ip_m_axis_tlast),
+        .event_frame_started          (ip_event_frame_started),
+        .event_tlast_unexpected       (ip_event_tlast_unexpected),
+        .event_tlast_missing          (ip_event_tlast_missing),
+        .event_status_channel_halt    (ip_event_status_channel_halt),
+        .event_data_in_channel_halt   (ip_event_data_in_channel_halt),
+        .event_data_out_channel_halt  (ip_event_data_out_channel_halt)
+    );
 
     always @(posedge clk_fft or negedge fft_rst_n) begin
         if (!fft_rst_n) begin
-            input_cnt <= {BIN_WIDTH{1'b0}};
-            output_busy <= 1'b0;
             m_axis_tdata <= {(2*DATA_WIDTH){1'b0}};
             m_axis_tvalid <= 1'b0;
             m_axis_tlast <= 1'b0;
             event_tlast_missing <= 1'b0;
             event_tlast_unexpected <= 1'b0;
             debug_out_bin <= {BIN_WIDTH{1'b0}};
+            output_cnt <= {BIN_WIDTH{1'b0}};
+            config_sent <= 1'b0;
         end else begin
-            if (m_axis_tready) begin
-                m_axis_tvalid <= 1'b0;
-                m_axis_tlast <= 1'b0;
-                output_busy <= 1'b0;
+            if (ip_cfg_valid && fft_cfg_ready) begin
+                config_sent <= 1'b1;
             end
 
-            if (s_axis_tvalid && s_axis_tready) begin
-                // 可综合占位：保持 AXI-Stream 握手和帧边界，不执行真实 FFT。
-                m_axis_tdata <= s_axis_tdata;
-                m_axis_tvalid <= 1'b1;
-                m_axis_tlast <= s_axis_tlast;
-                output_busy <= 1'b1;
-                debug_out_bin <= input_cnt;
+            m_axis_tdata <= ip_m_axis_tdata;
+            m_axis_tvalid <= ip_m_axis_tvalid;
+            m_axis_tlast <= ip_m_axis_tlast;
+            event_tlast_missing <= event_tlast_missing | ip_event_tlast_missing;
+            event_tlast_unexpected <= event_tlast_unexpected | ip_event_tlast_unexpected;
 
-                if ((input_cnt == LAST_BIN) && !s_axis_tlast) begin
-                    event_tlast_missing <= 1'b1;
-                end
+            if (ip_m_axis_tvalid && m_axis_tready) begin
+                debug_out_bin <= output_cnt;
 
-                if ((input_cnt != LAST_BIN) && s_axis_tlast) begin
-                    event_tlast_unexpected <= 1'b1;
-                end
-
-                if ((input_cnt == LAST_BIN) || s_axis_tlast) begin
-                    input_cnt <= {BIN_WIDTH{1'b0}};
+                if ((output_cnt == LAST_BIN) || ip_m_axis_tlast) begin
+                    output_cnt <= {BIN_WIDTH{1'b0}};
                 end else begin
-                    input_cnt <= input_cnt + {{(BIN_WIDTH-1){1'b0}}, 1'b1};
+                    output_cnt <= output_cnt + {{(BIN_WIDTH-1){1'b0}}, 1'b1};
                 end
             end
         end

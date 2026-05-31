@@ -1,0 +1,1 @@
+{"nodes": [{"id": "c_users_s_desktop_fpga_spectrumanalyzer_ip_async_sample_fifo_ip_async_sample_fifo_ip_sv_sv", "label": "async_sample_fifo_ip_sv.sv", "file_type": "code", "source_file": "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\async_sample_fifo_ip\\async_sample_fifo_ip_sv.sv", "source_location": "L1", "confidence_score": 1.0}], "edges": []}

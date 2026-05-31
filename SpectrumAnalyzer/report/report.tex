@@ -1,0 +1,155 @@
+\documentclass[UTF8,a4paper,12pt]{ctexart}
+
+\usepackage{geometry}
+\usepackage{longtable}
+\usepackage{booktabs}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{xcolor}
+\usepackage{ragged2e}
+
+\geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=2.5cm}
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  urlcolor=blue
+}
+\urlstyle{tt}
+\newcolumntype{L}[1]{>{\RaggedRight\arraybackslash}p{#1}}
+
+\title{FPGA 频谱分析仪课程设计实验报告}
+\author{SpectrumAnalyzer 工程}
+\date{2026 年 5 月 31 日}
+
+\begin{document}
+\maketitle
+
+\section{设计目标与任务要求}
+
+本设计实现一个面向课程答辩的 FPGA 频谱分析仪工程。工程目标是建立一条可仿真、可综合、层级清晰且便于讲解的数据通路：内部 DDS 产生测试信号，经可选 Hann 窗和异步 FIFO 后送入 256 点 FFT，再完成幅度计算、峰值检测、频谱缓存和 VGA 风格显示。
+
+本工程不要求真实上板，不补具体开发板管脚约束。验收重点是 Vivado 2025.2 下可以一键创建工程，4 个 testbench 通过，\texttt{spec\_analyzer\_top} 综合成功，真实 \texttt{xfft\_256} IP 接入综合路径，并且文档、报告和电路图说明与实现一致。
+
+\section{系统总体框图}
+
+系统主链路如下：
+
+\begin{verbatim}
+DDS 信号源
+  -> 可选 Hann 窗
+  -> 异步 FIFO
+  -> FFT 帧控制
+  -> Vivado xfft_256 FFT IP
+  -> 幅度计算
+  -> 峰值检测
+  -> 幅度压缩 / 频谱缓存
+  -> VGA 时序 / 频谱渲染 / OSD 叠加
+\end{verbatim}
+
+该链路把课程中 DDS、跨时钟域 FIFO、FFT 频域分析和 VGA 显示串成一个完整系统。每个模块都有独立职责，综合脚本使用保层级策略，便于在 Vivado schematic 中沿数据流展开。
+
+\section{模块划分与数据流}
+
+\begin{longtable}{p{0.26\textwidth}p{0.66\textwidth}}
+\toprule
+模块 & 作用 \\
+\midrule
+\endhead
+\texttt{dds\_signal\_gen} & 产生正弦、方波、三角波、锯齿波和双音测试输入。 \\
+\texttt{win\_mul\_optional} & Hann 窗可开可关，打开时降低频谱泄漏，关闭时旁路样本。 \\
+\texttt{async\_fifo\_bridge} & 默认实例化手写 \texttt{async\_fifo}，完成 \texttt{clk\_sample} 到 \texttt{clk\_fft} 的跨时钟域缓存；可选宏可切换到 FIFO IP。 \\
+\texttt{fft\_frame\_ctrl} & 每帧凑够 256 点，产生 AXI-Stream \texttt{tvalid/tready/tlast}。 \\
+\texttt{xfft\_wrapper} & 仿真时使用行为级 DFT；综合时实例化真实 Vivado \texttt{xfft\_256} IP。 \\
+\texttt{fft\_mag\_calc} & 对 FFT 输出复数计算 \texttt{real*real + imag*imag}。 \\
+\texttt{peak\_detector} & 忽略直流频点，找出当前帧最大频点和幅度。 \\
+\texttt{mag\_compress} 与 \texttt{spec\_bin\_buffer} & 将幅度压缩为显示高度，并缓存前 128 个可视频点。 \\
+\texttt{vga\_*} & 产生 640x480 风格时序、频谱柱状图、OSD 文字和 RGB 叠加输出。 \\
+\bottomrule
+\end{longtable}
+
+\section{IP 核配置表}
+
+\begin{longtable}{L{0.2\textwidth}L{0.22\textwidth}L{0.24\textwidth}L{0.24\textwidth}}
+\toprule
+IP 名称 & Vivado IP & 路径 & 接入状态 \\
+\midrule
+\endhead
+\path{xfft_256} & \path{xilinx.com:ip:xfft:9.1} & \path{ip/xfft_256_1/xfft_256.xci} & 综合路径真实接入 \path{xfft_wrapper}。 \\
+\path{async_sample_fifo_ip} & \path{fifo_generator:13.2} & \path{ip/async_sample_fifo_ip} & 已导入工程，可用宏选择接入。 \\
+\path{sine_rom_256} & \path{blk_mem_gen:8.4} & \path{ip/sine_rom_256} & 正弦 ROM IP 化展示。 \\
+\path{hann_rom_256} & \path{blk_mem_gen:8.4} & \path{ip/hann_rom_256} & Hann 系数 ROM IP 化展示。 \\
+\path{spec_bin_bram} & \path{blk_mem_gen:8.4} & \path{ip/spec_bin_bram} & 频谱缓存 BRAM IP 化展示。 \\
+\bottomrule
+\end{longtable}
+
+\section{DDS 信号源设计}
+
+DDS 使用相位累加器生成相位字。频率控制字越大，相位累加越快，输出波形周期越短。正弦波由四分之一波形查表和象限映射得到；方波、三角波和锯齿波由相位高位组合生成。双音模式将第二路正弦与主波形平均相加，避免直接相加导致溢出。
+
+\section{Hann 窗与异步 FIFO 设计}
+
+Hann 窗模块使用 256 点 Q1.15 系数。窗口开启时，输入样本与系数相乘后右移 15 位恢复到 16 位有符号数据；窗口关闭时直接旁路。
+
+异步 FIFO 默认采用手写 RTL，写控制、读控制、存储阵列、Gray 指针转换和跨时钟域同步拆分为独立模块。这样可以在报告和电路图中清楚说明空满判断和 CDC 处理。为满足 IP 展示要求，工程新增 \texttt{async\_fifo\_bridge}，定义 \texttt{USE\_ASYNC\_SAMPLE\_FIFO\_IP} 时可实例化 Vivado FIFO Generator。
+
+\section{FFT IP 接入与帧控制}
+
+\texttt{fft\_frame\_ctrl} 从 FIFO 读样本，保证每帧正好 256 点，并在最后一个样本置位 \texttt{tlast}。\texttt{xfft\_wrapper} 对外保持统一 32 位复数流格式：
+
+\begin{verbatim}
+{imag[15:0], real[15:0]}
+\end{verbatim}
+
+仿真文件集定义 \texttt{XFFT\_BEHAVIORAL\_DFT\_SIM}，使用行为级 DFT 进行快速自检。综合路径不定义该宏，因此实例化真实 \texttt{xfft\_256} IP。Vivado 综合 run 打开时会读取 \texttt{ip/xfft\_256\_1/xfft\_256.dcp} 并绑定到 \texttt{u\_xfft\_wrapper/u\_xfft\_256}。
+
+\section{幅度计算、峰值检测和频谱缓存}
+
+\texttt{fft\_mag\_calc} 将 FFT 输出拆分为实部和虚部，计算功率幅度。该方法避免求平方根，硬件代价更低，并且峰值检测只需要比较大小。
+
+\texttt{peak\_detector} 在每帧中忽略 0 号直流频点，记录最大幅度对应的频点。帧结束时输出 \texttt{peak\_bin}、\texttt{peak\_mag} 和一个周期的 \texttt{peak\_valid}。
+
+\texttt{mag\_compress} 使用分段移位把 32 位幅度压缩到 8 位显示高度。\texttt{spec\_bin\_buffer} 只保存前 128 个频点，匹配实信号频谱前半段显示需求。
+
+\section{VGA 显示设计}
+
+VGA 链路使用 640x480 风格时序。\texttt{vga\_timing\_gen} 输出同步信号、有效显示区和像素坐标；\texttt{spectrum\_renderer} 按横坐标读取频点高度并绘制柱状图；\texttt{osd\_text\_gen} 生成波形类型、窗口状态和峰值频点文字；\texttt{overlay\_mux} 按“文字优先、频谱其次、背景最后”的顺序合成 RGB。
+
+\section{仿真验证结果}
+
+Vivado 2025.2 下运行 \texttt{scripts/run\_all\_sims.tcl}，4 个 testbench 全部通过：
+
+\begin{longtable}{p{0.3\textwidth}p{0.58\textwidth}}
+\toprule
+Testbench & 验证结论 \\
+\midrule
+\endhead
+\texttt{tb\_async\_fifo} & FIFO 数据顺序、空满状态和 \texttt{rd\_valid} 检查通过。 \\
+\texttt{tb\_fft\_chain} & 单音输入主峰检测为频点 8，符合 \texttt{freq\_word=32'h0800\_0000} 的预期。 \\
+\texttt{tb\_vga\_render} & 一帧有效像素数量和频谱渲染输出检查通过。 \\
+\texttt{tb\_spec\_analyzer\_top} & 顶层端到端检测到两次有效峰值，幅度非零，FIFO 状态不矛盾。 \\
+\bottomrule
+\end{longtable}
+
+\section{综合结果与电路图分析}
+
+Vivado 2025.2 下运行 \texttt{scripts/run\_synth\_check.tcl}，\texttt{spec\_analyzer\_top} 综合完成，结果为 0 error、0 critical warning。综合脚本导出资源利用率、时序概要、层级、编译顺序和综合 checkpoint。综合层级保留策略为 \texttt{flatten\_hierarchy none}，便于在 schematic 中看到 DDS、窗口、FIFO、FFT、后处理和 VGA 的模块边界。
+
+电路图讲解时按如下顺序展开：
+
+\begin{verbatim}
+u_dds_signal_gen
+u_win_mul_optional
+u_async_fifo_bridge / u_async_fifo
+u_fft_frame_ctrl
+u_xfft_wrapper / u_xfft_256
+u_fft_mag_calc
+u_peak_detector / u_mag_compress
+u_spec_bin_buffer
+u_vga_timing_gen / u_spectrum_renderer / u_osd_text_gen / u_overlay_mux
+\end{verbatim}
+
+\section{课程答辩亮点与总结}
+
+本工程的亮点是结构完整、边界清楚、可解释性强。DDS、异步 FIFO、FFT 帧控制、幅度和峰值检测、VGA 显示均为可展开讲解的 RTL 模块；真实 \texttt{xfft\_256} IP 已接入综合路径；展示型 FIFO、ROM、BRAM IP 已导入工程，能够说明进一步 IP 化的方案。仿真和综合脚本均可在 Vivado 2025.2 下批处理运行，文档、报告和电路图讲解口径与最终实现保持一致。
+
+\end{document}
