@@ -130,7 +130,7 @@
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\rtl\\top\\spec_analyzer_top.v": {
-    "mtime": 1780213589.3727934,
+    "mtime": 1780234167.2613776,
     "ast_hash": "d249b623729ce991d331988686467089",
     "semantic_hash": ""
   },
@@ -190,8 +190,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\README.md": {
-    "mtime": 1780214864.5709605,
-    "ast_hash": "e0f30f7206e29951767c301e64c57e50",
+    "mtime": 1780234648.028687,
+    "ast_hash": "0ad5752841d4b3b3b189957245671939",
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\architecture.md": {
@@ -205,13 +205,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\test_tutorial.md": {
-    "mtime": 1780214864.5789602,
-    "ast_hash": "dafeb0d7434c03186f045eb5eb7c907a",
+    "mtime": 1780234648.0310013,
+    "ast_hash": "b44dfa0bd8823baf2fa88f490122b9c3",
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\verification_plan.md": {
-    "mtime": 1780214864.5769596,
-    "ast_hash": "5c121e2aa78e96fd7a991b75997ff607",
+    "mtime": 1780234648.032658,
+    "ast_hash": "7fbf04533d385f9c7812c204b626c9bb",
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\ip\\xfft_256_1\\testbench_vhdl.txt": {
@@ -305,13 +305,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\dfx_runtime.txt": {
-    "mtime": 1780215488.518027,
-    "ast_hash": "f36d9af57ef65cf42ec6a915afc49563",
+    "mtime": 1780233734.1790411,
+    "ast_hash": "66a244e150a444d135e4515f5d0db7a2",
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\full_score_goal.md": {
-    "mtime": 1780215041.222234,
-    "ast_hash": "62fe6e88b963ebdf59f4645deaecc57a",
+    "mtime": 1780234648.0342298,
+    "ast_hash": "5dce6b20a9f6c4b476b327eab459e505",
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\docs\\ip_integration.md": {
@@ -345,13 +345,13 @@
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\reports\\ip_status.md": {
-    "mtime": 1780215398.0379772,
+    "mtime": 1780232900.965188,
     "ast_hash": "a2b02f4098e59e240d5446428dca8d2d",
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\reports\\schematic_guide.md": {
-    "mtime": 1780215148.4456742,
-    "ast_hash": "8471ee3bdabf87a4b41be8148e5e4fe4",
+    "mtime": 1780215582.6951702,
+    "ast_hash": "9958b4b7b88989dfa2175ed69fb2f430",
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\reports\\sim_summary.md": {
@@ -360,13 +360,8 @@
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\reports\\synth_summary.md": {
-    "mtime": 1780215488.404215,
+    "mtime": 1780233019.9106545,
     "ast_hash": "d075d2c3533f2876ec093551fcc78fc2",
-    "semantic_hash": ""
-  },
-  "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\report\\report.pdf": {
-    "mtime": 1780215104.1784852,
-    "ast_hash": "b46c91c42e4fd2ce7a78fad11cfaf8be",
     "semantic_hash": ""
   },
   "C:\\Users\\S\\Desktop\\FPGA\\SpectrumAnalyzer\\report\\SpectrumAnalyzer_Report.pdf": {

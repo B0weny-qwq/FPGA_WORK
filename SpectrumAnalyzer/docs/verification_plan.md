@@ -19,6 +19,7 @@ C:/AgentHarness/bin/graphify.ps1 update .
 - `xfft_wrapper` 在综合路径是否实例化 `xfft_256`。
 - `async_fifo_bridge` 默认是否仍走手写 `async_fifo`，可选宏是否只影响 FIFO IP 展示路径。
 - `scripts/run_synth_check.tcl` 是否使用 `flatten_hierarchy none` 保留层级。
+- 旧 GUI 工程如果报 `module 'async_fifo_bridge' not found`，是否已在实际打开的 `.xpr` 中补齐 source 引用；`Boweny/Boweny.xpr` 还必须补入 `xfft_256.xci`。
 - README、`docs/` 和 `report/report.tex` 是否与实际实现一致。
 
 ## 3. Testbench
@@ -46,6 +47,8 @@ C:/AgentHarness/bin/graphify.ps1 update .
 | `reports/synth_summary.md` | 综合摘要 |
 
 当前 Vivado 2025.2 综合结果为：`spec_analyzer_top` 完成综合，0 error、0 critical warning。打开综合 run 时，Vivado 读取 `ip/xfft_256_1/xfft_256.dcp`，对应单元为 `u_xfft_wrapper/u_xfft_256`。
+
+2026-05-31 复查：用户截图中的 `[Synth 8-439] module 'async_fifo_bridge' not found` 最终定位为实际打开的 `Boweny/Boweny.xpr` 漏加 `SpectrumAnalyzer/rtl/fifo/async_fifo_bridge.v`。补齐后继续暴露 `module 'xfft_256' not found`，同样是 `Boweny/Boweny.xpr` 未导入 `SpectrumAnalyzer/ip/xfft_256_1/xfft_256.xci`。两个条目都补入后，使用 `Boweny.xpr` 直接综合通过，状态为 `synth_design Complete!`。
 
 ## 5. IP 状态检查
 

@@ -61,8 +61,25 @@ source scripts/run_synth_check.tcl
 | `scripts/run_all_sims.tcl` | 批量运行 `tb_async_fifo`、`tb_fft_chain`、`tb_vga_render`、`tb_spec_analyzer_top` |
 | `scripts/run_synth_check.tcl` | 运行 `synth_1`，导出利用率、时序、层级、编译顺序和 checkpoint |
 | `scripts/export_schematic.tcl` | 生成电路图查看说明，并辅助导出 elaborated hierarchy |
+| `scripts/fix_project_sources.tcl` | 修复旧 GUI 工程未导入新增 RTL/IP 时的 source 引用 |
 | `scripts/create_project.tcl` | 旧入口兼容脚本，内部调用 `setup_full_project.tcl` |
 | `scripts/gen_ip_fft.tcl` | 旧入口兼容脚本，内部调用 `gen_ip_all.tcl` |
+
+如果 Vivado GUI 综合时报 `module 'async_fifo_bridge' not found`，先确认当前打开的工程文件。`Boweny/Boweny.xpr` 也引用了本工程顶层，必须在 `sources_1` 中包含：
+
+- `../SpectrumAnalyzer/rtl/fifo/async_fifo_bridge.v`
+- `../SpectrumAnalyzer/ip/xfft_256_1/xfft_256.xci`
+
+当前仓库中的 `Boweny/Boweny.xpr` 已补齐这两个条目，并已用该工程直接综合通过。若打开的是 `SpectrumAnalyzer/vivado_project/spectrum_analyzer.xpr`，可在 Tcl Console 中执行：
+
+```tcl
+cd C:/Users/S/Desktop/FPGA/SpectrumAnalyzer
+source scripts/fix_project_sources.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+```
+
+也可以直接重新运行 `scripts/setup_full_project.tcl` 重建工程。本地已用 `scripts/run_synth_check.tcl` 重新综合确认：`async_fifo_bridge` 可被识别，综合结果为 0 error。
 
 ## 5. IP 状态
 

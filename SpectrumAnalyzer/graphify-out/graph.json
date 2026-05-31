@@ -601,7 +601,7 @@
       "label": "5. IP \u72b6\u6001",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L67",
+      "source_location": "L84",
       "id": "spectrumanalyzer_readme_5_ip_\u72b6\u6001",
       "community": 46,
       "norm_label": "5. ip \u72b6\u6001"
@@ -610,7 +610,7 @@
       "label": "6. \u5de5\u7a0b\u76ee\u5f55",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L79",
+      "source_location": "L96",
       "id": "spectrumanalyzer_readme_6_\u5de5\u7a0b\u76ee\u5f55",
       "community": 46,
       "norm_label": "6. \u5de5\u7a0b\u76ee\u5f55"
@@ -619,7 +619,7 @@
       "label": "7. \u6587\u6863\u5165\u53e3",
       "file_type": "document",
       "source_file": "README.md",
-      "source_location": "L104",
+      "source_location": "L121",
       "id": "spectrumanalyzer_readme_7_\u6587\u6863\u5165\u53e3",
       "community": 46,
       "norm_label": "7. \u6587\u6863\u5165\u53e3"
@@ -821,6 +821,15 @@
       "id": "docs_full_score_goal_12_2026_05_31_\u672c\u8f6e\u5b9e\u73b0\u72b6\u6001",
       "community": 6,
       "norm_label": "12. 2026-05-31 \u672c\u8f6e\u5b9e\u73b0\u72b6\u6001"
+    },
+    {
+      "label": "13. 2026-05-31 Boweny \u5de5\u7a0b source/IP \u7f3a\u5931\u4fee\u590d",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L263",
+      "id": "docs_full_score_goal_13_2026_05_31_boweny_\u5de5\u7a0b_source_ip_\u7f3a\u5931\u4fee\u590d",
+      "community": 6,
+      "norm_label": "13. 2026-05-31 boweny \u5de5\u7a0b source/ip \u7f3a\u5931\u4fee\u590d"
     },
     {
       "label": "interface_spec.md",
@@ -1147,10 +1156,19 @@
       "norm_label": "5. \u7efc\u5408\u68c0\u67e5"
     },
     {
-      "label": "6. \u7535\u8def\u56fe\u67e5\u770b",
+      "label": "5.1 \u65e7\u5de5\u7a0b source \u7f3a\u5931\u4fee\u590d",
       "file_type": "document",
       "source_file": "docs/test_tutorial.md",
       "source_location": "L83",
+      "id": "docs_test_tutorial_5_1_\u65e7\u5de5\u7a0b_source_\u7f3a\u5931\u4fee\u590d",
+      "community": 3,
+      "norm_label": "5.1 \u65e7\u5de5\u7a0b source \u7f3a\u5931\u4fee\u590d"
+    },
+    {
+      "label": "6. \u7535\u8def\u56fe\u67e5\u770b",
+      "file_type": "document",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L104",
       "id": "docs_test_tutorial_6_\u7535\u8def\u56fe\u67e5\u770b",
       "community": 3,
       "norm_label": "6. \u7535\u8def\u56fe\u67e5\u770b"
@@ -1195,7 +1213,7 @@
       "label": "3. Testbench",
       "file_type": "document",
       "source_file": "docs/verification_plan.md",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "docs_verification_plan_3_testbench",
       "community": 0,
       "norm_label": "3. testbench"
@@ -1204,7 +1222,7 @@
       "label": "4. \u7efc\u5408\u68c0\u67e5",
       "file_type": "document",
       "source_file": "docs/verification_plan.md",
-      "source_location": "L35",
+      "source_location": "L36",
       "id": "docs_verification_plan_4_\u7efc\u5408\u68c0\u67e5",
       "community": 0,
       "norm_label": "4. \u7efc\u5408\u68c0\u67e5"
@@ -1213,7 +1231,7 @@
       "label": "5. IP \u72b6\u6001\u68c0\u67e5",
       "file_type": "document",
       "source_file": "docs/verification_plan.md",
-      "source_location": "L50",
+      "source_location": "L53",
       "id": "docs_verification_plan_5_ip_\u72b6\u6001\u68c0\u67e5",
       "community": 0,
       "norm_label": "5. ip \u72b6\u6001\u68c0\u67e5"
@@ -1222,7 +1240,7 @@
       "label": "6. \u7535\u8def\u56fe\u9a8c\u6536",
       "file_type": "document",
       "source_file": "docs/verification_plan.md",
-      "source_location": "L62",
+      "source_location": "L65",
       "id": "docs_verification_plan_6_\u7535\u8def\u56fe\u9a8c\u6536",
       "community": 0,
       "norm_label": "6. \u7535\u8def\u56fe\u9a8c\u6536"
@@ -1255,13 +1273,13 @@
       "norm_label": "schematic_guide.md"
     },
     {
-      "label": "\u7f01\u714e\u608e/\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d\u00af\u5b58\u69d1",
+      "label": "Schematic Review Guide",
       "file_type": "document",
       "source_file": "reports/schematic_guide.md",
       "source_location": "L1",
-      "id": "reports_schematic_guide_\u7f01\u714e\u608e_\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d_\u5b58\u69d1",
+      "id": "reports_schematic_guide_schematic_review_guide",
       "community": 49,
-      "norm_label": "\u7f01\u714e\u608e/\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d \u5b58\u69d1"
+      "norm_label": "schematic review guide"
     },
     {
       "label": "sim_summary.md",
@@ -1298,6 +1316,24 @@
       "id": "reports_synth_summary_synthesis_check_summary",
       "community": 51,
       "norm_label": "synthesis check summary"
+    },
+    {
+      "label": "13. 2026-05-31 Synthesis source \u7f3a\u5931\u4fee\u590d",
+      "file_type": "document",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L263",
+      "community": 6,
+      "norm_label": "13. 2026-05-31 synthesis source \u7f3a\u5931\u4fee\u590d",
+      "id": "docs_full_score_goal_13_2026_05_31_synthesis_source_\u7f3a\u5931\u4fee\u590d"
+    },
+    {
+      "label": "\u7f01\u714e\u608e/\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d\u00af\u5b58\u69d1",
+      "file_type": "document",
+      "source_file": "reports/schematic_guide.md",
+      "source_location": "L1",
+      "community": 49,
+      "norm_label": "\u7f01\u714e\u608e/\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d \u5b58\u69d1",
+      "id": "reports_schematic_guide_\u7f01\u714e\u608e_\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d_\u5b58\u69d1"
     },
     {
       "label": "\u603b\u4f53\u7ed3\u6784",
@@ -1421,7 +1457,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L67",
-      "community": 5,
+      "community": 4,
       "norm_label": "\u540e\u5904\u7406\u6a21\u5757",
       "id": "docs_interface_spec_\u540e\u5904\u7406\u6a21\u5757"
     },
@@ -1430,7 +1466,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L69",
-      "community": 5,
+      "community": 4,
       "norm_label": "`fft_mag_calc`",
       "id": "docs_interface_spec_fft_mag_calc"
     },
@@ -1439,7 +1475,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L79",
-      "community": 5,
+      "community": 4,
       "norm_label": "`peak_detector`",
       "id": "docs_interface_spec_peak_detector"
     },
@@ -1448,7 +1484,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L83",
-      "community": 5,
+      "community": 4,
       "norm_label": "`mag_compress`",
       "id": "docs_interface_spec_mag_compress"
     },
@@ -1457,7 +1493,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L87",
-      "community": 5,
+      "community": 4,
       "norm_label": "`spec_bin_buffer`",
       "id": "docs_interface_spec_spec_bin_buffer"
     },
@@ -1466,7 +1502,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L91",
-      "community": 4,
+      "community": 1,
       "norm_label": "vga \u6a21\u5757",
       "id": "docs_interface_spec_vga_\u6a21\u5757"
     },
@@ -1475,7 +1511,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L93",
-      "community": 4,
+      "community": 1,
       "norm_label": "`vga_timing_gen`",
       "id": "docs_interface_spec_vga_timing_gen"
     },
@@ -1484,7 +1520,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L104",
-      "community": 4,
+      "community": 1,
       "norm_label": "`spectrum_renderer`",
       "id": "docs_interface_spec_spectrum_renderer"
     },
@@ -1493,7 +1529,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L108",
-      "community": 4,
+      "community": 1,
       "norm_label": "`osd_text_gen`",
       "id": "docs_interface_spec_osd_text_gen"
     },
@@ -1502,7 +1538,7 @@
       "file_type": "document",
       "source_file": "docs/interface_spec.md",
       "source_location": "L112",
-      "community": 4,
+      "community": 1,
       "norm_label": "`overlay_mux`",
       "id": "docs_interface_spec_overlay_mux"
     },
@@ -1631,9 +1667,9 @@
       "source_file": "README.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "readme_md",
-      "target": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
-      "confidence_score": 1.0
+      "target": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1"
     },
     {
       "relation": "contains",
@@ -1641,9 +1677,9 @@
       "source_file": "README.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
-      "target": "spectrumanalyzer_readme_1_\u9879\u76ee\u7b80\u4ecb",
-      "confidence_score": 1.0
+      "target": "spectrumanalyzer_readme_1_\u9879\u76ee\u7b80\u4ecb"
     },
     {
       "relation": "contains",
@@ -1651,9 +1687,9 @@
       "source_file": "README.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
-      "target": "spectrumanalyzer_readme_2_\u5f53\u524d\u9a8c\u6536\u72b6\u6001",
-      "confidence_score": 1.0
+      "target": "spectrumanalyzer_readme_2_\u5f53\u524d\u9a8c\u6536\u72b6\u6001"
     },
     {
       "relation": "contains",
@@ -1661,9 +1697,9 @@
       "source_file": "README.md",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
-      "target": "spectrumanalyzer_readme_3_\u4e00\u952e\u6d41\u7a0b",
-      "confidence_score": 1.0
+      "target": "spectrumanalyzer_readme_3_\u4e00\u952e\u6d41\u7a0b"
     },
     {
       "relation": "contains",
@@ -1671,9 +1707,9 @@
       "source_file": "README.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
-      "target": "spectrumanalyzer_readme_4_\u811a\u672c\u8bf4\u660e",
-      "confidence_score": 1.0
+      "target": "spectrumanalyzer_readme_4_\u811a\u672c\u8bf4\u660e"
     },
     {
       "relation": "contains",
@@ -1681,9 +1717,9 @@
       "source_file": "README.md",
       "source_location": "L67",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
-      "target": "spectrumanalyzer_readme_5_ip_\u72b6\u6001",
-      "confidence_score": 1.0
+      "target": "spectrumanalyzer_readme_5_ip_\u72b6\u6001"
     },
     {
       "relation": "contains",
@@ -1691,9 +1727,9 @@
       "source_file": "README.md",
       "source_location": "L79",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
-      "target": "spectrumanalyzer_readme_6_\u5de5\u7a0b\u76ee\u5f55",
-      "confidence_score": 1.0
+      "target": "spectrumanalyzer_readme_6_\u5de5\u7a0b\u76ee\u5f55"
     },
     {
       "relation": "contains",
@@ -1701,9 +1737,9 @@
       "source_file": "README.md",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "spectrumanalyzer_readme_fpga_\u9891\u8c31\u5206\u6790\u4eea\u8bfe\u7a0b\u8bbe\u8ba1",
-      "target": "spectrumanalyzer_readme_7_\u6587\u6863\u5165\u53e3",
-      "confidence_score": 1.0
+      "target": "spectrumanalyzer_readme_7_\u6587\u6863\u5165\u53e3"
     },
     {
       "relation": "contains",
@@ -1721,9 +1757,9 @@
       "source_file": "docs/architecture.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
-      "target": "docs_architecture_1_\u603b\u4f53\u7ed3\u6784",
-      "confidence_score": 1.0
+      "target": "docs_architecture_1_\u603b\u4f53\u7ed3\u6784"
     },
     {
       "relation": "contains",
@@ -1731,9 +1767,9 @@
       "source_file": "docs/architecture.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
-      "target": "docs_architecture_2_\u65f6\u949f\u57df\u5212\u5206",
-      "confidence_score": 1.0
+      "target": "docs_architecture_2_\u65f6\u949f\u57df\u5212\u5206"
     },
     {
       "relation": "contains",
@@ -1741,9 +1777,9 @@
       "source_file": "docs/architecture.md",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
-      "target": "docs_architecture_3_\u6570\u636e\u6d41\u8bf4\u660e",
-      "confidence_score": 1.0
+      "target": "docs_architecture_3_\u6570\u636e\u6d41\u8bf4\u660e"
     },
     {
       "relation": "contains",
@@ -1751,9 +1787,9 @@
       "source_file": "docs/architecture.md",
       "source_location": "L44",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
-      "target": "docs_architecture_4_\u624b\u5199_rtl_\u4e0e_ip_\u5206\u5de5",
-      "confidence_score": 1.0
+      "target": "docs_architecture_4_\u624b\u5199_rtl_\u4e0e_ip_\u5206\u5de5"
     },
     {
       "relation": "contains",
@@ -1761,9 +1797,9 @@
       "source_file": "docs/architecture.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_architecture_\u7cfb\u7edf\u67b6\u6784\u8bf4\u660e",
-      "target": "docs_architecture_5_\u7535\u8def\u56fe\u8bb2\u89e3\u987a\u5e8f",
-      "confidence_score": 1.0
+      "target": "docs_architecture_5_\u7535\u8def\u56fe\u8bb2\u89e3\u987a\u5e8f"
     },
     {
       "relation": "contains",
@@ -1821,9 +1857,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_md",
-      "target": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal"
     },
     {
       "relation": "contains",
@@ -1831,9 +1867,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_0_\u4f7f\u7528\u65b9\u5f0f",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_0_\u4f7f\u7528\u65b9\u5f0f"
     },
     {
       "relation": "contains",
@@ -1841,9 +1877,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L232",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_10_\u8fb9\u754c\u4e0e\u6ce8\u610f\u4e8b\u9879",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_10_\u8fb9\u754c\u4e0e\u6ce8\u610f\u4e8b\u9879"
     },
     {
       "relation": "contains",
@@ -1851,9 +1887,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L241",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_11_\u5f53\u524d\u5df2\u77e5\u72b6\u6001\u63d0\u793a",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_11_\u5f53\u524d\u5df2\u77e5\u72b6\u6001\u63d0\u793a"
     },
     {
       "relation": "contains",
@@ -1861,9 +1897,29 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L251",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_12_2026_05_31_\u672c\u8f6e\u5b9e\u73b0\u72b6\u6001",
+      "target": "docs_full_score_goal_12_2026_05_31_\u672c\u8f6e\u5b9e\u73b0\u72b6\u6001"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L263",
+      "weight": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_13_2026_05_31_boweny_\u5de5\u7a0b_source_ip_\u7f3a\u5931\u4fee\u590d",
       "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "docs/full_score_goal.md",
+      "source_location": "L263",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
+      "target": "docs_full_score_goal_13_2026_05_31_synthesis_source_\u7f3a\u5931\u4fee\u590d"
     },
     {
       "relation": "contains",
@@ -1871,9 +1927,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_1_\u603b\u76ee\u6807",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_1_\u603b\u76ee\u6807"
     },
     {
       "relation": "contains",
@@ -1881,9 +1937,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_2_\u6700\u7ec8\u7cfb\u7edf\u94fe\u8def",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_2_\u6700\u7ec8\u7cfb\u7edf\u94fe\u8def"
     },
     {
       "relation": "contains",
@@ -1891,9 +1947,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L54",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_3_ip_\u8865\u9f50\u8981\u6c42",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_3_ip_\u8865\u9f50\u8981\u6c42"
     },
     {
       "relation": "contains",
@@ -1901,9 +1957,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_4_vivado_\u811a\u672c\u8981\u6c42",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_4_vivado_\u811a\u672c\u8981\u6c42"
     },
     {
       "relation": "contains",
@@ -1911,9 +1967,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_5_\u7efc\u5408\u7535\u8def\u56fe\u8981\u6c42",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_5_\u7efc\u5408\u7535\u8def\u56fe\u8981\u6c42"
     },
     {
       "relation": "contains",
@@ -1921,9 +1977,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_6_\u6587\u6863\u66f4\u65b0\u8981\u6c42",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_6_\u6587\u6863\u66f4\u65b0\u8981\u6c42"
     },
     {
       "relation": "contains",
@@ -1931,9 +1987,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L151",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_7_latex_\u5b9e\u9a8c\u62a5\u544a\u8981\u6c42",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_7_latex_\u5b9e\u9a8c\u62a5\u544a\u8981\u6c42"
     },
     {
       "relation": "contains",
@@ -1941,9 +1997,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L180",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_8_graphify_\u8981\u6c42",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_8_graphify_\u8981\u6c42"
     },
     {
       "relation": "contains",
@@ -1951,9 +2007,9 @@
       "source_file": "docs/full_score_goal.md",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_full_score_goal_spectrumanalyzer_\u6ee1\u5206\u7ea7\u8865\u9f50_goal",
-      "target": "docs_full_score_goal_9_\u9a8c\u6536\u547d\u4ee4",
-      "confidence_score": 1.0
+      "target": "docs_full_score_goal_9_\u9a8c\u6536\u547d\u4ee4"
     },
     {
       "relation": "contains",
@@ -1971,9 +2027,9 @@
       "source_file": "docs/interface_spec.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
-      "target": "docs_interface_spec_1_\u9876\u5c42\u6a21\u5757_spec_analyzer_top",
-      "confidence_score": 1.0
+      "target": "docs_interface_spec_1_\u9876\u5c42\u6a21\u5757_spec_analyzer_top"
     },
     {
       "relation": "contains",
@@ -1981,9 +2037,9 @@
       "source_file": "docs/interface_spec.md",
       "source_location": "L23",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
-      "target": "docs_interface_spec_2_dds_\u4e0e_hann_\u7a97\u63a5\u53e3",
-      "confidence_score": 1.0
+      "target": "docs_interface_spec_2_dds_\u4e0e_hann_\u7a97\u63a5\u53e3"
     },
     {
       "relation": "contains",
@@ -1991,9 +2047,9 @@
       "source_file": "docs/interface_spec.md",
       "source_location": "L38",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
-      "target": "docs_interface_spec_3_fifo_\u63a5\u53e3",
-      "confidence_score": 1.0
+      "target": "docs_interface_spec_3_fifo_\u63a5\u53e3"
     },
     {
       "relation": "contains",
@@ -2001,9 +2057,9 @@
       "source_file": "docs/interface_spec.md",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
-      "target": "docs_interface_spec_4_fft_axi_stream_\u63a5\u53e3",
-      "confidence_score": 1.0
+      "target": "docs_interface_spec_4_fft_axi_stream_\u63a5\u53e3"
     },
     {
       "relation": "contains",
@@ -2011,9 +2067,9 @@
       "source_file": "docs/interface_spec.md",
       "source_location": "L84",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
-      "target": "docs_interface_spec_5_\u540e\u5904\u7406\u63a5\u53e3",
-      "confidence_score": 1.0
+      "target": "docs_interface_spec_5_\u540e\u5904\u7406\u63a5\u53e3"
     },
     {
       "relation": "contains",
@@ -2021,9 +2077,9 @@
       "source_file": "docs/interface_spec.md",
       "source_location": "L93",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_interface_spec_\u63a5\u53e3\u8bf4\u660e",
-      "target": "docs_interface_spec_6_vga_\u63a5\u53e3",
-      "confidence_score": 1.0
+      "target": "docs_interface_spec_6_vga_\u63a5\u53e3"
     },
     {
       "relation": "contains",
@@ -2091,9 +2147,9 @@
       "source_file": "docs/interface_spec.md",
       "source_location": "L55",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_interface_spec_4_fft_axi_stream_\u63a5\u53e3",
-      "target": "docs_interface_spec_fft_frame_ctrl",
-      "confidence_score": 1.0
+      "target": "docs_interface_spec_fft_frame_ctrl"
     },
     {
       "relation": "contains",
@@ -2101,9 +2157,9 @@
       "source_file": "docs/interface_spec.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_interface_spec_4_fft_axi_stream_\u63a5\u53e3",
-      "target": "docs_interface_spec_xfft_wrapper",
-      "confidence_score": 1.0
+      "target": "docs_interface_spec_xfft_wrapper"
     },
     {
       "relation": "contains",
@@ -2131,9 +2187,9 @@
       "source_file": "docs/ip_integration.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_ip_integration_md",
-      "target": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
-      "confidence_score": 1.0
+      "target": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e"
     },
     {
       "relation": "contains",
@@ -2141,9 +2197,9 @@
       "source_file": "docs/ip_integration.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
-      "target": "docs_ip_integration_1_\u603b\u89c8",
-      "confidence_score": 1.0
+      "target": "docs_ip_integration_1_\u603b\u89c8"
     },
     {
       "relation": "contains",
@@ -2151,9 +2207,9 @@
       "source_file": "docs/ip_integration.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
-      "target": "docs_ip_integration_2_ip_\u6e05\u5355",
-      "confidence_score": 1.0
+      "target": "docs_ip_integration_2_ip_\u6e05\u5355"
     },
     {
       "relation": "contains",
@@ -2161,9 +2217,9 @@
       "source_file": "docs/ip_integration.md",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
-      "target": "docs_ip_integration_3_\u751f\u6210\u811a\u672c",
-      "confidence_score": 1.0
+      "target": "docs_ip_integration_3_\u751f\u6210\u811a\u672c"
     },
     {
       "relation": "contains",
@@ -2171,9 +2227,9 @@
       "source_file": "docs/ip_integration.md",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
-      "target": "docs_ip_integration_4_fft_ip_\u63a5\u5165\u70b9",
-      "confidence_score": 1.0
+      "target": "docs_ip_integration_4_fft_ip_\u63a5\u5165\u70b9"
     },
     {
       "relation": "contains",
@@ -2181,9 +2237,9 @@
       "source_file": "docs/ip_integration.md",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
-      "target": "docs_ip_integration_5_fifo_ip_\u53ef\u9009\u63a5\u5165\u70b9",
-      "confidence_score": 1.0
+      "target": "docs_ip_integration_5_fifo_ip_\u53ef\u9009\u63a5\u5165\u70b9"
     },
     {
       "relation": "contains",
@@ -2191,9 +2247,9 @@
       "source_file": "docs/ip_integration.md",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_ip_integration_ip_\u63a5\u5165\u8bf4\u660e",
-      "target": "docs_ip_integration_6_rom_bram_\u5c55\u793a_ip",
-      "confidence_score": 1.0
+      "target": "docs_ip_integration_6_rom_bram_\u5c55\u793a_ip"
     },
     {
       "relation": "contains",
@@ -2201,9 +2257,9 @@
       "source_file": "docs/synthesis_schematic.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_synthesis_schematic_md",
-      "target": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
-      "confidence_score": 1.0
+      "target": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e"
     },
     {
       "relation": "contains",
@@ -2211,9 +2267,9 @@
       "source_file": "docs/synthesis_schematic.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
-      "target": "docs_synthesis_schematic_1_\u9a8c\u6536\u76ee\u6807",
-      "confidence_score": 1.0
+      "target": "docs_synthesis_schematic_1_\u9a8c\u6536\u76ee\u6807"
     },
     {
       "relation": "contains",
@@ -2221,9 +2277,9 @@
       "source_file": "docs/synthesis_schematic.md",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
-      "target": "docs_synthesis_schematic_2_\u751f\u6210\u7efc\u5408\u7ed3\u679c",
-      "confidence_score": 1.0
+      "target": "docs_synthesis_schematic_2_\u751f\u6210\u7efc\u5408\u7ed3\u679c"
     },
     {
       "relation": "contains",
@@ -2231,9 +2287,9 @@
       "source_file": "docs/synthesis_schematic.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
-      "target": "docs_synthesis_schematic_3_vivado_gui_\u67e5\u770b\u6b65\u9aa4",
-      "confidence_score": 1.0
+      "target": "docs_synthesis_schematic_3_vivado_gui_\u67e5\u770b\u6b65\u9aa4"
     },
     {
       "relation": "contains",
@@ -2241,9 +2297,9 @@
       "source_file": "docs/synthesis_schematic.md",
       "source_location": "L46",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
-      "target": "docs_synthesis_schematic_4_\u7b54\u8fa9\u8bb2\u89e3\u53e3\u5f84",
-      "confidence_score": 1.0
+      "target": "docs_synthesis_schematic_4_\u7b54\u8fa9\u8bb2\u89e3\u53e3\u5f84"
     },
     {
       "relation": "contains",
@@ -2251,9 +2307,9 @@
       "source_file": "docs/synthesis_schematic.md",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_synthesis_schematic_\u7efc\u5408\u7535\u8def\u56fe\u8bf4\u660e",
-      "target": "docs_synthesis_schematic_5_ip_\u4e0e_rtl_\u6807\u6ce8",
-      "confidence_score": 1.0
+      "target": "docs_synthesis_schematic_5_ip_\u4e0e_rtl_\u6807\u6ce8"
     },
     {
       "relation": "contains",
@@ -2281,9 +2337,9 @@
       "source_file": "docs/test_tutorial.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
-      "target": "docs_test_tutorial_1_\u521b\u5efa\u5b8c\u6574_vivado_\u5de5\u7a0b",
-      "confidence_score": 1.0
+      "target": "docs_test_tutorial_1_\u521b\u5efa\u5b8c\u6574_vivado_\u5de5\u7a0b"
     },
     {
       "relation": "contains",
@@ -2291,9 +2347,9 @@
       "source_file": "docs/test_tutorial.md",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
-      "target": "docs_test_tutorial_2_\u6279\u91cf\u8fd0\u884c_4_\u4e2a_testbench",
-      "confidence_score": 1.0
+      "target": "docs_test_tutorial_2_\u6279\u91cf\u8fd0\u884c_4_\u4e2a_testbench"
     },
     {
       "relation": "contains",
@@ -2321,9 +2377,9 @@
       "source_file": "docs/test_tutorial.md",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
-      "target": "docs_test_tutorial_3_\u5355\u72ec\u8fd0\u884c\u67d0\u4e2a_testbench",
-      "confidence_score": 1.0
+      "target": "docs_test_tutorial_3_\u5355\u72ec\u8fd0\u884c\u67d0\u4e2a_testbench"
     },
     {
       "relation": "contains",
@@ -2351,9 +2407,9 @@
       "source_file": "docs/test_tutorial.md",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
-      "target": "docs_test_tutorial_5_\u7efc\u5408\u68c0\u67e5",
-      "confidence_score": 1.0
+      "target": "docs_test_tutorial_5_\u7efc\u5408\u68c0\u67e5"
     },
     {
       "relation": "contains",
@@ -2371,9 +2427,9 @@
       "source_file": "docs/test_tutorial.md",
       "source_location": "L83",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_test_tutorial_\u4e2d\u6587\u6d4b\u8bd5\u6559\u7a0b",
-      "target": "docs_test_tutorial_6_\u7535\u8def\u56fe\u67e5\u770b",
-      "confidence_score": 1.0
+      "target": "docs_test_tutorial_6_\u7535\u8def\u56fe\u67e5\u770b"
     },
     {
       "relation": "contains",
@@ -2418,6 +2474,16 @@
     {
       "relation": "contains",
       "confidence": "EXTRACTED",
+      "source_file": "docs/test_tutorial.md",
+      "source_location": "L83",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "docs_test_tutorial_5_\u7efc\u5408\u68c0\u67e5",
+      "target": "docs_test_tutorial_5_1_\u65e7\u5de5\u7a0b_source_\u7f3a\u5931\u4fee\u590d"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
       "source_file": "docs/verification_plan.md",
       "source_location": "L1",
       "weight": 1.0,
@@ -2431,9 +2497,9 @@
       "source_file": "docs/verification_plan.md",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
-      "target": "docs_verification_plan_1_\u9a8c\u8bc1\u76ee\u6807",
-      "confidence_score": 1.0
+      "target": "docs_verification_plan_1_\u9a8c\u8bc1\u76ee\u6807"
     },
     {
       "relation": "contains",
@@ -2441,9 +2507,9 @@
       "source_file": "docs/verification_plan.md",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
-      "target": "docs_verification_plan_2_\u9759\u6001\u68c0\u67e5",
-      "confidence_score": 1.0
+      "target": "docs_verification_plan_2_\u9759\u6001\u68c0\u67e5"
     },
     {
       "relation": "contains",
@@ -2451,9 +2517,9 @@
       "source_file": "docs/verification_plan.md",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
-      "target": "docs_verification_plan_3_testbench",
-      "confidence_score": 1.0
+      "target": "docs_verification_plan_3_testbench"
     },
     {
       "relation": "contains",
@@ -2461,9 +2527,9 @@
       "source_file": "docs/verification_plan.md",
       "source_location": "L35",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
-      "target": "docs_verification_plan_4_\u7efc\u5408\u68c0\u67e5",
-      "confidence_score": 1.0
+      "target": "docs_verification_plan_4_\u7efc\u5408\u68c0\u67e5"
     },
     {
       "relation": "contains",
@@ -2471,9 +2537,9 @@
       "source_file": "docs/verification_plan.md",
       "source_location": "L50",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
-      "target": "docs_verification_plan_5_ip_\u72b6\u6001\u68c0\u67e5",
-      "confidence_score": 1.0
+      "target": "docs_verification_plan_5_ip_\u72b6\u6001\u68c0\u67e5"
     },
     {
       "relation": "contains",
@@ -2481,9 +2547,9 @@
       "source_file": "docs/verification_plan.md",
       "source_location": "L62",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "docs_verification_plan_\u9a8c\u8bc1\u8ba1\u5212",
-      "target": "docs_verification_plan_6_\u7535\u8def\u56fe\u9a8c\u6536",
-      "confidence_score": 1.0
+      "target": "docs_verification_plan_6_\u7535\u8def\u56fe\u9a8c\u6536"
     },
     {
       "relation": "contains",
@@ -2531,9 +2597,9 @@
       "source_file": "reports/ip_status.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_ip_status_md",
-      "target": "reports_ip_status_ip_status_report",
-      "confidence_score": 1.0
+      "target": "reports_ip_status_ip_status_report"
     },
     {
       "relation": "contains",
@@ -2541,9 +2607,19 @@
       "source_file": "reports/schematic_guide.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_schematic_guide_md",
-      "target": "reports_schematic_guide_\u7f01\u714e\u608e_\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d_\u5b58\u69d1",
-      "confidence_score": 1.0
+      "target": "reports_schematic_guide_schematic_review_guide"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "reports/schematic_guide.md",
+      "source_location": "L1",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "reports_schematic_guide_md",
+      "target": "reports_schematic_guide_\u7f01\u714e\u608e_\u705e\u66de\u7d11\u9422\u4f43\u77fe\u9365\u70ac\u7161\u942a\u5b2d_\u5b58\u69d1"
     },
     {
       "relation": "contains",
@@ -2551,9 +2627,9 @@
       "source_file": "reports/sim_summary.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_sim_summary_md",
-      "target": "reports_sim_summary_simulation_summary",
-      "confidence_score": 1.0
+      "target": "reports_sim_summary_simulation_summary"
     },
     {
       "relation": "contains",
@@ -2561,9 +2637,9 @@
       "source_file": "reports/synth_summary.md",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_synth_summary_md",
-      "target": "reports_synth_summary_synthesis_check_summary",
-      "confidence_score": 1.0
+      "target": "reports_synth_summary_synthesis_check_summary"
     },
     {
       "relation": "contains",
@@ -2727,5 +2803,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c0a1187cd4fb7a3cced59d76cedfccc6af428aa8"
+  "built_at_commit": "25db1e34abb2e0dad5f666d053755b96bbf28044"
 }

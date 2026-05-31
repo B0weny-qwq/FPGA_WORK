@@ -259,3 +259,29 @@ C:/AgentHarness/bin/graphify.ps1 update .
 - 已运行 Vivado 2025.2：一键工程创建通过，4 个 testbench 全部通过，`spec_analyzer_top` 综合通过，`open_run synth_1` 时读取 `ip/xfft_256_1/xfft_256.dcp`。
 - 已更新 README、架构、接口、验证、教程、IP 接入、电路图说明，并新增 `report/report.tex`。
 - 本轮后续仍需继续维护 Graphify 图谱，并在后续修改后同步更新本状态段和相关文档。
+
+## 13. 2026-05-31 Boweny 工程 source/IP 缺失修复
+
+用户在 Vivado GUI 中截图反馈：
+
+```text
+[Synth 8-439] module 'async_fifo_bridge' not found
+[Synth 8-6156] failed synthesizing module 'spec_analyzer_top'
+```
+
+复查结论：`rtl/fifo/async_fifo_bridge.v` 文件存在，`spec_analyzer_top` 第 152 行实例化正确；使用 `SpectrumAnalyzer/scripts/run_synth_check.tcl` 重建工程后也能综合通过。真正的问题是用户实际打开的是 `Boweny/Boweny.xpr`，该工程引用了 `SpectrumAnalyzer/rtl/top/spec_analyzer_top.v`，但 `sources_1` 没有包含新增的 `async_fifo_bridge.v`。
+
+直接修复 `Boweny/Boweny.xpr` 后继续验证，下一处错误变为：
+
+```text
+[Synth 8-439] module 'xfft_256' not found
+```
+
+原因同样是 `Boweny/Boweny.xpr` 未导入真实 FFT IP 的 `SpectrumAnalyzer/ip/xfft_256_1/xfft_256.xci`。
+
+本轮补充：
+
+- 直接修改 `Boweny/Boweny.xpr`，补入 `../SpectrumAnalyzer/rtl/fifo/async_fifo_bridge.v`。
+- 直接修改 `Boweny/Boweny.xpr`，补入 `../SpectrumAnalyzer/ip/xfft_256_1/xfft_256.xci`。
+- 复跑 `Boweny/Boweny.xpr` 的 `synth_1`，确认 `async_fifo_bridge` 和 `xfft_256` 均被读取，最终状态为 `synth_design Complete!`。
+- 更新 README、测试教程和验证计划，记录实际根因是 `Boweny.xpr` 工程目录缺 source/IP，而不是 RTL 缺模块。

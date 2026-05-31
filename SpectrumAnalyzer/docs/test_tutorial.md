@@ -80,6 +80,27 @@ D:/FPGA/2025.2/Vivado/bin/vivado.bat -mode batch -source scripts/run_synth_check
 
 综合时不定义 `XFFT_BEHAVIORAL_DFT_SIM`，因此 `xfft_wrapper` 接入真实 `xfft_256` IP。Vivado `open_run synth_1` 时会读取 `ip/xfft_256_1/xfft_256.dcp`。
 
+### 5.1 旧工程 source 缺失修复
+
+如果在 Vivado GUI 中直接点 Run Synthesis，出现：
+
+```text
+[Synth 8-439] module 'async_fifo_bridge' not found
+```
+
+原因通常是当前打开的 GUI 工程仍是旧的 `sources_1`，没有导入新增文件 `rtl/fifo/async_fifo_bridge.v`。如果打开的是 `Boweny/Boweny.xpr`，还需要确认它已经导入 `SpectrumAnalyzer/ip/xfft_256_1/xfft_256.xci`，否则下一个错误会变成 `module 'xfft_256' not found`。
+
+当前仓库已直接修正 `Boweny/Boweny.xpr`，并使用该工程复跑综合通过。若打开的是 `SpectrumAnalyzer/vivado_project/spectrum_analyzer.xpr`，可在 Vivado Tcl Console 中执行：
+
+```tcl
+cd C:/Users/S/Desktop/FPGA/SpectrumAnalyzer
+source scripts/fix_project_sources.tcl
+reset_run synth_1
+launch_runs synth_1 -jobs 2
+```
+
+该脚本会补加 `rtl/`、`sim/tb/` 和 `ip/*.xci` 中缺失的 source，重新设置顶层并刷新 compile order。
+
 ## 6. 电路图查看
 
 ```powershell

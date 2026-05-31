@@ -29,7 +29,7 @@
         "memory_options_data": [ { "value": "block_ram", "resolve_type": "user", "usage": "all" } ],
         "memory_options_phase_factors": [ { "value": "block_ram", "resolve_type": "user", "usage": "all" } ],
         "memory_options_reorder": [ { "value": "block_ram", "resolve_type": "user", "usage": "all" } ],
-        "number_of_stages_using_block_ram_for_data_and_phase_factors": [ { "value": "1", "resolve_type": "user", "usage": "all" } ],
+        "number_of_stages_using_block_ram_for_data_and_phase_factors": [ { "value": "1", "value_src": "user", "resolve_type": "user", "usage": "all" } ],
         "memory_options_hybrid": [ { "value": "false", "resolve_type": "user", "format": "bool", "usage": "all" } ],
         "complex_mult_type": [ { "value": "use_mults_resources", "resolve_type": "user", "usage": "all" } ],
         "butterfly_type": [ { "value": "use_luts", "resolve_type": "user", "usage": "all" } ],
@@ -39,7 +39,7 @@
       },
       "model_parameters": {
         "C_XDEVICEFAMILY": [ { "value": "artix7", "resolve_type": "generated", "usage": "all" } ],
-        "C_PART": [ { "value": "xc7a35tcpg236-1", "resolve_type": "generated", "usage": "all" } ],
+        "C_PART": [ { "value": "xc7a35tcsg324-1", "resolve_type": "generated", "usage": "all" } ],
         "C_S_AXIS_CONFIG_TDATA_WIDTH": [ { "value": "16", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_S_AXIS_DATA_TDATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
         "C_M_AXIS_DATA_TDATA_WIDTH": [ { "value": "32", "resolve_type": "generated", "format": "long", "usage": "all" } ],
@@ -81,7 +81,7 @@
         "BASE_BOARD_PART": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
         "BOARD_CONNECTIONS": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
         "DEVICE": [ { "value": "xc7a35t", "resolve_type": "generated", "usage": "all" } ],
-        "PACKAGE": [ { "value": "cpg236", "resolve_type": "generated", "usage": "all" } ],
+        "PACKAGE": [ { "value": "csg324", "resolve_type": "generated", "usage": "all" } ],
         "PREFHDL": [ { "value": "VERILOG", "resolve_type": "generated", "usage": "all" } ],
         "SILICON_REVISION": [ { "value": "", "resolve_type": "generated", "usage": "all" } ],
         "SIMULATOR_LANGUAGE": [ { "value": "MIXED", "resolve_type": "generated", "usage": "all" } ],
@@ -323,5 +323,5 @@
       }
     }
   },
-  "checksum": "61dd5ad5"
+  "checksum": "129abaad"
 }
